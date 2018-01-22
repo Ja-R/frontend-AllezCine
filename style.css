@@ -8,6 +8,14 @@ body{
   color: white;
 }
 
-span{
+.rouge{
   color: #FE423E;
+}
+
+.btn-dark{
+  background-color: #281313 !important;
+}
+
+.sub-jumb{
+  background-color: #FE4240;
 }
