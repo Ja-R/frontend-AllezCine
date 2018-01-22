@@ -1,15 +1,35 @@
-.jumbotron{
-  background-image: url("asset/image/mebeforeyou.jpg");
-  background-size: cover;
+.rouge{
+  color: #FE423E;
 }
 
 body{
   font-family: 'Lato', sans-serif;
+  color: white !important;
+}
+.jumbotron{
+  position: relative !important;
+  /*background-image: url("asset/image/mebeforeyou.jpg");
+  background-size: cover;*/
+  /*padding: 0 !important;*/
   color: white;
 }
 
-.rouge{
-  color: #FE423E;
+nav.navbar{
+  position: absolute ;
+  z-index: 10;
+  color: white !important;
+}
+
+.carousel{
+  z-index: 5;
+}
+
+img{
+  filter: brightness(0.30);
+}
+
+.btn-danger{
+  background-color: #FE4140;
 }
 
 .btn-dark{
@@ -18,4 +38,5 @@ body{
 
 .sub-jumb{
   background-color: #FE4240;
+  padding: 10px;
 }
