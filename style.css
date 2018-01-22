@@ -12,9 +12,27 @@ span{
   color: #FE423E;
 }
 
+
+
+.contact h2, .shop h2{
+  color: #0D0D0D;
+  padding-left: 10px;
+  border-left: 4px solid #FE423E;
+  margin-left: 30px;
+}
+
 footer{
   background-color: #0D0D0D;
+  padding-top: 10px;
+  font-size: 0.75em;
 
+}
+
+footer h2{
+  color: #FE423E;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 footer h4{
@@ -45,6 +63,25 @@ footer ul{
   border: 1px solid #FFF;
 }
 
+.subscribe{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.subscribe input[type="text"]{
+  border-radius: 0;
+  padding: 5px;
+  border: none;
+}
+
+input[type="submit"]{
+  border: none;
+  font-weight: bold;
+  padding: 5px;
+  background-color: #FE423E;
+  color: #FFF;
+}
+
 footer iframe{
   width: 40%;
   height: 60px;
@@ -62,4 +99,9 @@ footer a, footer a:hover, footer a:visited{
 
 footer hr{
   border-top: 1px solid #2E2E2F;
+}
+
+footer img{
+  margin: 0;
+  padding: 0;
 }
