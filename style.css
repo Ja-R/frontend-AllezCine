@@ -11,3 +11,47 @@ body{
 span{
   color: #FE423E;
 }
+
+footer{
+  background-color: #0D0D0D;
+
+}
+
+footer h4{
+  color: #A29FA1;
+}
+
+footer ul{
+  list-style-type: none;
+  display: block;
+  float: left;
+  padding-left: 0;
+  color: #2E2E2F;
+}
+
+.connect{
+  text-align: center;
+}
+.connect i{
+  padding: 5px;
+  border: 1px solid #FFF;
+}
+
+footer iframe{
+  width: 40%;
+  height: 60px;
+  background-color: grey;
+  margin-bottom: 15px;
+}
+
+footer a, footer a:hover, footer a:visited{
+  text-decoration: none;
+  color:  #A29FA1;
+  background-color: #2E2E2F;
+  padding: 2px 10px;
+  margin: 5px 0;
+}
+
+footer hr{
+  border-top: 1px solid #2E2E2F;
+}
