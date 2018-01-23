@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Allez Cine</title>
+    <!-- police -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/1aefb972da.js"></script>
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <!-- jumbotron -->
+      <div class="jumbotron p-0" id="home">
+
+        <!-- navigation -->
+        <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-transparent" id="navigation">
+          <a class="navbar-brand text-white" href="#"><h1 class="display-6 mt-3"> <span class="rouge">ALLEZ</span>CINE!</h1></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse p-0" id="navbarSupportedContent">
+            <ul class="navbar-nav mt-0">
+              <li class="nav-item active">
+                <a class="nav-link rouge" href="home">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fd-transparent text-white ml-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Films
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Comedy</a>
+                  <a class="dropdown-item" href="#">Western</a>
+                  <a class="dropdown-item" href="#">Fiction</a>
+                  <br>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fd-transparent text-white ml-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Featured movies
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Comedy</a>
+                  <a class="dropdown-item" href="#">Western</a>
+                  <a class="dropdown-item" href="#">Fiction</a>
+                  <br>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fd-transparent text-white ml-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Features series TV
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Comedy</a>
+                  <a class="dropdown-item" href="#">Western</a>
+                  <a class="dropdown-item" href="#">Fiction</a>
+                  <br>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fd-transparent text-white ml-1" href="#">Shop movies</a>
+              </li>
+              <li class="nav-item text-white ml-5">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+<!-- nico -->
+            <!-- <form class="input-group">
+              <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche" aria-describedby="basic-addon1">
+                <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+              </div>
+            </form> -->
+<!-- moi -->
+              <form class="form-inline ml-5 rounded">
+                <input class="form-control fd-noir-transparent border-0" type="search" placeholder="Recherche" aria-label="Search">
+                <button class="btn my-2 my-sm-0 fd-noir-transparent" type="submit">  <i class="fa fa-search" aria-hidden="true"></i></button>
+              </form>
+
+          </div>
+        </nav>
+
+        <!-- slider -->
+        <div id="carouselHeader" class="carousel slide" data-ride="carousel" data-interval="2000">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="asset/image/i1.jpg" alt="First slide">
+              <div class="carousel-caption mb-5">
+                <h1 class="display-4 text-center">LATEST <span class="rouge">ON</span>LINE <span class="rouge">MO</span>VIES</h1>
+                <p class="lead text-center">In space no one can hear you scream.</p>
+                <p class="lead text-center">
+                  <a class="btn btn-danger btn-lg rounded-0" href="#" role="button">WATCH TRAILER</a>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="asset/image/i2.jpg" alt="Second slide">
+              <div class="carousel-caption mb-5">
+                <h1 class="display-4 text-center"> LATEST <span class="rouge">ON</span>LINE <span class="rouge">MO</span>VIES</h1>
+                <p class="lead text-center">In space someone can hear you scream.</p>
+                <p class="lead text-center">
+                  <a class="btn btn-danger btn-lg rounded-0" href="#" role="button">WATCH TRAILER</a>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="asset/image/i3.jpg" alt="Third slide">
+              <div class="carousel-caption mb-5">
+                <h1 class="display-4 text-center"> LATEST <span class="rouge">ON</span>LINE <span class="rouge">MO</span>VIES</h1>
+                <p class="lead text-center">In space no one can hear you scream.</p>
+                <p class="lead text-center">
+                  <a class="btn btn-danger btn-lg rounded-0" href="#" role="button">WATCH TRAILER</a>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="asset/image/i4.jpg" alt="Third slide">
+              <div class="carousel-caption mb-5">
+                <h1 class="display-4 text-center"> LATEST <span class="rouge">ON</span>LINE <span class="rouge">MO</span>VIES</h1>
+                <p class="lead text-center">In space no one can hear you scream.</p>
+                <p class="lead text-center">
+                  <a class="btn btn-danger btn-lg rounded-0" href="#" role="button">WATCH TRAILER</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bas du jumbotron -->
+        <div class="container-fluid sub-jumb">
+          <div class="row">
+            <div class="col-lg-2 text-white ">
+              <p> <i class="fa fa-phone" aria-hidden="true"></i> (+000) 009 455 4088</p>
+            </div>
+            <div class="col-lg-1">
+              <button type="button" class="btn btn-dark rounded-0" data-toggle="modal" data-target="#login" data-whatever="@fat">LOGIN</button>
+            </div>
+            <div class="col-lg-1">
+              <button type="button" class="btn btn-dark rounded-0" data-toggle="modal" data-target="#register" data-whatever="@getbootstrap">REGISTER</button>
+            </div>
+          </div>
+        </div>
+        <!-- fenetre login -->
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fenetre register -->
+        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- fin jumbotron -->
+
+    </header>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
