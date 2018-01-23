@@ -23,9 +23,9 @@ nav.navbar{
   z-index: 5;
 }
 
-/*img{
+img.voile{
   filter: brightness(0.30);
-}*/
+}
 
 .btn-danger{
   background-color: #FE4140;
@@ -48,6 +48,10 @@ nav.navbar{
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
+.films{
+  width: 154px;
+  height: 228px;
+}
 
 
 .contact h2, .shop h2{
