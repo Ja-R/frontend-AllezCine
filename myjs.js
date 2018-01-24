@@ -1,8 +1,11 @@
 let featuredMoviesContainer = document.getElementById('featuredMoviesContainer');
 let featuredSeriesContainer = document.getElementById('featuredSeriesContainer');
-var moviesContainerChildren = featuredMoviesContainer.childNodes;
-let show = document.getElementById('showMoreOrLessMovies');
+let moviesContainerChildren = featuredMoviesContainer.childNodes;
+let seriesContainerChildren = featuredSeriesContainer.childNodes;
+let showMovies = document.getElementById('showMoreOrLessMovies');
+let showSeries = document.getElementById('showMoreOrLessSeries');
 let allMoviesDisplayed = false;
+let allSeriesDisplayed = false;
 
 const featuredMovies = [
     {title: 'Winchester', genre: 'Horror', year: 2018},
@@ -34,7 +37,7 @@ let displayFeatured = function (container, data, bool, button){
         let description = document.createTextNode(data[i].title + ' ' + data[i].genre + ' ' + data[i].year);
         
         let wrap = document.createElement('DIV');
-        wrap.className = 'col-xl-2';
+        wrap.className = 'col-xl-2 feat_wrap';
         wrap.appendChild(description);
         
         if(i>=12){
@@ -46,7 +49,11 @@ let displayFeatured = function (container, data, bool, button){
 }
 let showAllMovies = document.getElementById('showAllMovies');
 showAllMovies.addEventListener('click', function(){
-    displayFeatured(featuredMoviesContainer, featuredMovies, allMoviesDisplayed, show);
+    displayFeatured(featuredMoviesContainer, featuredMovies, allMoviesDisplayed, showMovies);
+});
+let showAllSeries = document.getElementById('showAllSeries');
+showAllSeries.addEventListener('click', function(){
+    displayFeatured(featuredSeriesContainer, featuredMovies, allSeriesDisplayed, showSeries);
 });
 
 let showMoreOrLessMovies = function(){
@@ -68,9 +75,28 @@ let showMoreOrLessMovies = function(){
 
 showMovies.addEventListener('click', showMoreOrLessMovies);
 
-let genreFilter = function(filter, container, data){
+let showMoreOrLessSeries = function(){
+    if(allSeriesDisplayed == false){
+        for(let i=1; i<seriesContainerChildren.length; i++){
+            seriesContainerChildren[i].style.display = 'inline';
+        }
+        allSeriesDisplayed = true;
+        showSeries.innerHTML = 'Show Less';
+    }
+    else if(allSeriesDisplayed == true){
+        for(let i=12; i<seriesContainerChildren.length; i++){
+            seriesContainerChildren[i].style.display = 'none';
+        }
+        allSeriesDisplayed = false;
+        showSeries.innerHTML = 'Show More'
+    }
+}
+
+showSeries.addEventListener('click', showMoreOrLessSeries);
+
+let genreFilter = function(filter, container, data, button){
     container.innerHTML = "";
-    showMovies.style.display = 'none';
+    button.style.display = 'none';
     for(let i=0; i<data.length; i++){
         if(data[i].genre == filter){
             let description = document.createTextNode(data[i].title + ' ' + data[i].genre + ' ' + data[i].year);
@@ -86,24 +112,44 @@ let genreFilter = function(filter, container, data){
 }
 let showAllActionMovies = document.getElementById('showAllActionMovies');
 showAllActionMovies.addEventListener('click', function(){
-    genreFilter('Action', featuredMoviesContainer, featuredMovies);
+    genreFilter('Action', featuredMoviesContainer, featuredMovies, showMovies);
 });
 let showAllAdventureMovies = document.getElementById('showAllAdventureMovies');
 showAllAdventureMovies.addEventListener('click', function(){
-    genreFilter('Adventure', featuredMoviesContainer, featuredMovies);
+    genreFilter('Adventure', featuredMoviesContainer, featuredMovies, showMovies);
 });
 let showAllComedyMovies = document.getElementById('showAllComedyMovies');
 showAllComedyMovies.addEventListener('click', function(){
-    genreFilter('Comedy', featuredMoviesContainer, featuredMovies);
+    genreFilter('Comedy', featuredMoviesContainer, featuredMovies, showMovies);
 });
 let showAllFantasyMovies = document.getElementById('showAllFantasyMovies');
 showAllFantasyMovies.addEventListener('click', function(){
-    genreFilter('Fantasy', featuredMoviesContainer, featuredMovies);
+    genreFilter('Fantasy', featuredMoviesContainer, featuredMovies, showMovies);
 });
 let showAllHorrorMovies = document.getElementById('showAllHorrorMovies');
 showAllHorrorMovies.addEventListener('click', function(){
-    genreFilter('Horror', featuredMoviesContainer, featuredMovies);
+    genreFilter('Horror', featuredMoviesContainer, featuredMovies, showMovies);
+});
+let showAllActionSeries = document.getElementById('showAllActionSeries');
+showAllActionSeries.addEventListener('click', function(){
+    genreFilter('Action', featuredSeriesContainer, featuredMovies, showSeries);
+});
+let showAllAdventureSeries = document.getElementById('showAllAdventureSeries');
+showAllAdventureSeries.addEventListener('click', function(){
+    genreFilter('Adventure', featuredSeriesContainer, featuredMovies, showSeries);
+});
+let showAllComedySeries = document.getElementById('showAllComedySeries');
+showAllComedySeries.addEventListener('click', function(){
+    genreFilter('Comedy', featuredSeriesContainer, featuredMovies, showSeries);
+});
+let showAllFantasySeries = document.getElementById('showAllFantasySeries');
+showAllFantasySeries.addEventListener('click', function(){
+    genreFilter('Fantasy', featuredSeriesContainer, featuredMovies, showSeries);
+});
+let showAllHorrorSeries = document.getElementById('showAllHorrorSeries');
+showAllHorrorSeries.addEventListener('click', function(){
+    genreFilter('Horror', featuredSeriesContainer, featuredMovies, showSeries);
 });
 
 displayFeatured(featuredMoviesContainer, featuredMovies, allMoviesDisplayed, showMovies);
-displayFeatured(featuredSeriesContainer, featuredMovies, allMoviesDisplayed, showSeries);
+displayFeatured(featuredSeriesContainer, featuredMovies, allSeriesDisplayed, showSeries);
