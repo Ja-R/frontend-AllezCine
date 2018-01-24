@@ -53,6 +53,13 @@ img.voile{
   padding: 10px;
 }
 
+ul.barre-rouge{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .btn-dark{
   background-color: #281313 !important;
 }
