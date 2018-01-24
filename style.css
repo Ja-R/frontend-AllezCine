@@ -4,48 +4,68 @@
 
 body{
   font-family: 'Lato', sans-serif;
-  /*color: white !important;*/
 }
 .jumbotron{
   position: relative !important;
-  /*background-image: url("asset/image/mebeforeyou.jpg");
-  background-size: cover;*/
-  /*padding: 0 !important;*/
-  /*color: white;*/
 }
 
+/* navigation */
 nav.navbar{
   position: absolute ;
   z-index: 10;
-}
-
-.carousel{
-  z-index: 5;
-}
-
-/*img{
-  filter: brightness(0.30);
-}*/
-
-.btn-danger{
-  background-color: #FE4140;
-}
-
-.btn-dark{
-  background-color: #281313 !important;
-}
-/*barre rouge*/
-.sub-jumb{
-  background-color: #FE4240;
-  padding: 10px;
 }
 
 .fd-transparent{
   background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
+/* recherche */
 .fd-noir-transparent{
   background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* carousel header */
+.carousel{
+  z-index: 5;
+}
+
+img.voile{
+  filter: brightness(0.30);
+}
+
+.carousel-indicators li {
+    background-color: white !important;
+}
+
+.carousel-indicators li.active {
+    background-color: #FE423E !important;
+}
+
+/* texte header */
+.btn-danger{
+  background-color: #FE4140;
+}
+
+/*barre rouge*/
+.sub-jumb{
+  background-color: #FE4240;
+  padding: 10px;
+}
+
+.btn-dark{
+  background-color: #281313 !important;
+}
+
+/*slide films*/
+.films{
+  width: 160px;
+  height: 230px;
+}
+
+ul.info-films{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 
