@@ -1,0 +1,20 @@
+let featuredMovies = [
+    {title: 'Winchester', genre: 'Horror', year: 2018},
+    {title: 'A Fantastic Woman', genre: 'Drama', year: 2018},
+    {title: 'The Cage Fighter', genre: 'Action', year: 2018},
+    {title: 'Hostiles', genre: 'Adventure', year: 2017},
+    {title: 'The Insult', genre: 'Drama', year: 2017},
+    {title: 'Padman', genre: 'Comedy', year: 2018},
+    {title: '12 Strong', genre: 'Action', year: 2018},
+    {title: 'Den of Thieves', genre: 'Action', year:2018},
+    {title: 'Star Wars: The Last Jedi', genre: 'Action', year: 2017},
+    {title: 'The Commuter', genre: 'Action', year: 2018},
+    {title: 'True Lies', genre: 'Comedy', year: 1994},
+    {title: 'American Made', genre: 'Comedy', year: 2017},
+    {title: 'Ant-Man', genre: 'Comedy', year: 2015},
+    {title: 'Pixels', genre: 'Fantasy', year: 2015},
+    {title: 'Colossal', genre: 'Fantasy', year: 2016},
+    {title: 'Men in Black 3', genre: 'Fantasy', year: 2012},
+    {title: 'Wild Wild West', genre: 'Fantasy', year: 1999},
+    {title: 'Ghostbusters II', genre: 'Fantasy', year: 1989}
+];
