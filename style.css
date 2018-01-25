@@ -25,7 +25,7 @@ nav.navbar{
 }
 
 #HomeNav:hover{
-  background-color: rgba(0, 0, 0, 0.4) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* recherche */
