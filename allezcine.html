@@ -14,6 +14,12 @@
   </head>
   <body>
     <header>
+        <div id="cookie-message">
+            <p>
+                AllezCine! uses cookies to ensure we give you the best experience on our website.
+                <a href="cookie-policy.html" title="View our Cookie Policy">Find out more about cookies</a>
+        </p>
+        </div>
       <!-- jumbotron -->
       <div class="jumbotron p-0" id="home">
 
@@ -508,12 +514,14 @@
   <div class="container-fluid shop">
     <h2>SHOP MOVIES</h2>
     <div class="row">
-      <p class="float-right"><span class="carousel_button" href="#shopCarousel" role="button" data-slide="prev"><</span><span class="carousel_button" href="#shopCarousel" role="button" data-slide="next">></span></p>
+      <div class="float-right">
+        <p><span class="carousel_button" href="#shopCarousel" role="button" data-slide="prev"><</span><span class="carousel_button" href="#shopCarousel" role="button" data-slide="next">></span></p>
+      </div>
     </div>
     <div class="row">
         <div class="col-xl-5 order-12">
             <div class="card">
-              <iframe id="trailerFrame" src="" frameborder="0"></iframe>
+              <iframe id="trailerFrame" src="https://www.youtube.com/embed/4839KJuXfGc?rel=0&amp;controls=0" frameborder="0"></iframe>
               <div class="card-body trailer">
                 <p id="trailerTitle" class="card-text">Les Tuches 3</p>
                 <p id="trailerYear" class="card-text">18888</p>
@@ -692,7 +700,7 @@
 
   <div class="container-fluid contact">
     <h2>CONTACT US</h2>
-      <form class="col-xl-8 offset-xl-2">
+      <form class="col-xl-6">
           <div class="row">
             <div class="form-group col">
               <input type="text" class="form-control" placeholder="First name">
@@ -720,6 +728,9 @@
             </div>
           </div>
         </form>
+        <div class="col-xl-6">
+            <div class="container" id="map"></div>
+        </div>
   </div>
   <footer class="container-fluid">
     <div class="row">
@@ -794,7 +805,7 @@
       </div>
       </div>
       <div class="xl-col">
-        <h3> <span>ALLEZ</span>CINE!</h3>
+        <h3> <span class="rouge">ALLEZ</span>CINE!</h3>
         <hr class="my-1 allezcine">
         <div class="container">
           <div class="row allezcine">
@@ -825,6 +836,8 @@
 
     </div>
   </footer>
+<script src="googlemap.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDvZywH430NDKJvie1nS3ePZqKmm9EF1Yk &callback=myMap"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
