@@ -149,7 +149,8 @@ ul.info-films{
 
 footer{
   background-color: #0D0D0D;
-  padding-top: 10px;
+  padding-top: 20px;
+  margin-top: 15px;
   font-size: 0.75em;
 
 }
@@ -208,7 +209,7 @@ footer ul{
   border: none;
 }
 
-input[type="submit"]{
+.form_button{
   border: none;
   font-weight: bold;
   padding: 5px;
@@ -295,4 +296,7 @@ footer img{
 }
 .index a:hover{
   color: #FE4140;
+}
+#map{
+  min-height: 400px;
 }
