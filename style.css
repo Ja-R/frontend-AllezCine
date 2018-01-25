@@ -75,7 +75,7 @@ ul.barre-rouge{
 button.btn-onglet{
   border-radius: 0px 25px 25px 0px !important;
   margin-bottom: 5px;
-  width: 110px !important;
+  width: 120px !important;
   left: -80px;
 }
 
@@ -125,6 +125,25 @@ ul.info-films{
   margin: 0;
   padding: 0;
 }
+
+/*icone fleche to the top*/
+
+a.arrowTop{
+  position: fixed;
+  z-index: 50;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  background-color: #0D0D0D;
+  padding: 5px 8px;
+  border: 3px solid red;
+  border-radius: 50%;
+}
+
+a.arrowTop:hover{
+  padding: 8px 11px;
+}
+
 
 
 
