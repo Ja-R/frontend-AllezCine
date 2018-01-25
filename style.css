@@ -20,6 +20,14 @@ nav.navbar{
   background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
+ a.nav-link:hover{
+  background-color: #FE4140 !important;
+}
+
+#HomeNav:hover{
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
 /* recherche */
 .fd-noir-transparent{
   background-color: rgba(0, 0, 0, 0.4) !important;
