@@ -28,16 +28,42 @@ const featuredMovies = [
     {title: 'Ghostbusters II', genre: 'Fantasy', year: 1989}
 ];
 
+const featuredSeries = [
+    {title: 'Black Mirror', genre: 'Fantasy', year: 2011, image: 'featuredblackmirror'},
+    {title: 'Vikings', genre: 'Action', year: 2013, image: 'featuredvikings'},
+    {title: 'Shameless', genre: 'Comedy', year: 2011, image: 'featuredshameless'},
+    {title: 'The End of the F***ing World', genre: 'Drama', year: 2017, image: 'featuredtheendofthef***ingworld'},
+    {title: 'Game of Thrones', genre: 'Drama', year: 2011, image: 'featuredgameofthrones'},
+    {title: 'Stranger Things', genre: 'Adventure', year: 2016, image: 'featuredstrangerthings'},
+    {title: 'Grey\'s Anatomy', genre: 'Drama', year: 2018, image: 'featuredgreysanatomy'},
+    {title: 'The Flash', genre: 'Action', year:2014, image: 'featuredtheflash'},
+    {title: 'Peaky Blinders', genre: 'Drama', year: 2013, image: 'featuredpeakyblinders'},
+    {title: 'Star Trek: Discovery', genre: 'Fantasy', year: 2017, image: 'featuredstartrek'},
+    {title: 'The Good Doctor', genre: 'Drama', year: 2017, image: 'featuredthegooddoctor'},
+    {title: 'The Gifted', genre: 'Drama', year: 2017, image: 'featuredthegifted'},
+    {title: 'The Handmaid\'s Tale', genre: 'Comedy', year: 2017, image: 'featuredthehandmaidstale'},
+    {title: 'Agents of S.H.I.E.L.D.', genre: 'Action', year: 2013, image: 'featuredagentsofshield'},
+    {title: 'Riverdale', genre: 'Fantasy', year: 2017, image: 'featuredriverdale'},
+    {title: 'Arrow', genre: 'Action', year: 2012, image: 'featuredarrow'},
+    {title: 'The Crown', genre: 'Drama', year: 2016, image: 'featuredthecrown'},
+    {title: 'Black Lightning', genre: 'Action', year: 2018, image: 'featuredblacklightning'}
+];
+
 let displayFeatured = function (container, data, bool, button){
     bool = false;
     button.style.display = 'inline'
     button.innerHTML = 'Show More';
     container.innerHTML = "";
     for(let i=0; i<data.length; i++){
+        let poster = document.createElement('img');
+        poster.className = 'poster';
+        poster.src = 'asset/image/' + data[i].image + '.jpg';
+        
         let description = document.createTextNode(data[i].title + ' ' + data[i].genre + ' ' + data[i].year);
         
         let wrap = document.createElement('DIV');
         wrap.className = 'col-xl-2 feat_wrap';
+        wrap.appendChild(poster);
         wrap.appendChild(description);
         
         if(i>=12){
@@ -53,7 +79,7 @@ showAllMovies.addEventListener('click', function(){
 });
 let showAllSeries = document.getElementById('showAllSeries');
 showAllSeries.addEventListener('click', function(){
-    displayFeatured(featuredSeriesContainer, featuredMovies, allSeriesDisplayed, showSeries);
+    displayFeatured(featuredSeriesContainer, featuredSeries, allSeriesDisplayed, showSeries);
 });
 
 let showMoreOrLessMovies = function(){
@@ -99,10 +125,15 @@ let genreFilter = function(filter, container, data, button){
     button.style.display = 'none';
     for(let i=0; i<data.length; i++){
         if(data[i].genre == filter){
+            let poster = document.createElement('img');
+            poster.className = 'poster';
+            poster.src = 'asset/image/' + data[i].image + '.jpg';
+
             let description = document.createTextNode(data[i].title + ' ' + data[i].genre + ' ' + data[i].year);
             
             let wrap = document.createElement('DIV');
             wrap.className = 'col-xl-2';
+            wrap.appendChild(poster);
             wrap.appendChild(description);
 
         container.appendChild(wrap);
@@ -132,24 +163,55 @@ showAllHorrorMovies.addEventListener('click', function(){
 });
 let showAllActionSeries = document.getElementById('showAllActionSeries');
 showAllActionSeries.addEventListener('click', function(){
-    genreFilter('Action', featuredSeriesContainer, featuredMovies, showSeries);
+    genreFilter('Action', featuredSeriesContainer, featuredSeries, showSeries);
 });
 let showAllAdventureSeries = document.getElementById('showAllAdventureSeries');
 showAllAdventureSeries.addEventListener('click', function(){
-    genreFilter('Adventure', featuredSeriesContainer, featuredMovies, showSeries);
+    genreFilter('Adventure', featuredSeriesContainer, featuredSeries, showSeries);
 });
 let showAllComedySeries = document.getElementById('showAllComedySeries');
 showAllComedySeries.addEventListener('click', function(){
-    genreFilter('Comedy', featuredSeriesContainer, featuredMovies, showSeries);
+    genreFilter('Comedy', featuredSeriesContainer, featuredSeries, showSeries);
 });
 let showAllFantasySeries = document.getElementById('showAllFantasySeries');
 showAllFantasySeries.addEventListener('click', function(){
-    genreFilter('Fantasy', featuredSeriesContainer, featuredMovies, showSeries);
+    genreFilter('Fantasy', featuredSeriesContainer, featuredSeries, showSeries);
 });
 let showAllHorrorSeries = document.getElementById('showAllHorrorSeries');
 showAllHorrorSeries.addEventListener('click', function(){
-    genreFilter('Horror', featuredSeriesContainer, featuredMovies, showSeries);
+    genreFilter('Horror', featuredSeriesContainer, featuredSeries, showSeries);
 });
 
 displayFeatured(featuredMoviesContainer, featuredMovies, allMoviesDisplayed, showMovies);
-displayFeatured(featuredSeriesContainer, featuredMovies, allSeriesDisplayed, showSeries);
+displayFeatured(featuredSeriesContainer, featuredSeries, allSeriesDisplayed, showSeries);
+
+
+const trailersList = [
+    {title: 'Les Tuches 3', url: 'https://www.youtube.com/embed/4839KJuXfGc?rel=0&amp;controls=0', year: '18888'},
+    {title: 'Star Wars I', url: 'https://www.youtube.com/embed/bD7bpG-zDJQ?rel=0&amp;controls=0', year: '18888'},
+    {title: 'Star Wars II', url: 'https://www.youtube.com/embed/gYbW1F_c9eM?rel=0&amp;controls=0', year: '18888'},
+    {title: 'Star Wars III', url: 'https://www.youtube.com/embed/5UnjrG_N8hU?rel=0&amp;controls=0', year: '18888'},
+    {title: 'Star Wars IV', url: 'https://www.youtube.com/embed/9gvqpFbRKtQ?rel=0&amp;controls=0', year: '18888'},
+    {title: 'Star Wars V', url: 'https://www.youtube.com/embed/JNwNXF9Y6kY?rel=0&amp;controls=0', year: '18888'},
+    {title: 'Star Wars VI', url: 'https://www.youtube.com/embed/5UfA_aKBGMc?rel=0&amp;controls=0', year: '18888'},
+    {title: 'Star Wars VII', url: 'https://www.youtube.com/embed/sGbxmsDFVnE?rel=0&amp;controls=0', year: '18888'},
+    {title: 'Star Wars VIII', url: 'https://www.youtube.com/embed/Q0CbN8sfihY?rel=0&amp;controls=0', year: '18888'},
+    {title: 'Rogue One: A Star Wars Story', url: 'https://www.youtube.com/embed/frdj1zb9sMY?rel=0&amp;controls=0', year: '18888'},
+    {title: 'The Matrix', url: 'https://www.youtube.com/embed/vKQi3bBA1y8?rel=0&amp;controls=0', year: '18888'},
+    {title: 'The Matrix Reloaded', url: 'https://www.youtube.com/embed/kYzz0FSgpSU?rel=0&amp;controls=0', year: '18888'},
+    {title: 'The Matrix Revolutions', url: 'https://www.youtube.com/embed/hMbexEPAOQI?rel=0&amp;controls=0', year: '18888'}
+];
+
+const trailerFrame = document.getElementById('trailerFrame');
+const trailerTitle = document.getElementById('trailerTitle');
+const trailerYear = document.getElementById('trailerYear');
+
+let showTrailer = function(title){
+    for(let i=0; i<trailersList.length; i++){
+        if(title == trailersList[i].title){
+            trailerFrame.src = trailersList[i].url;
+            trailerTitle.innerHTML = title;
+            trailerYear.innerHTML = trailersList[i].year;
+        }
+    }
+}
