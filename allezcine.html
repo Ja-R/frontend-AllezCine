@@ -83,7 +83,7 @@
         </nav>
 
         <!-- slider -->
-        <div id="carouselHeader" class="carousel slide" data-ride="carousel" data-interval="500">
+        <div id="carouselHeader" class="carousel slide" data-ride="carousel" data-interval="2000">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -137,65 +137,93 @@
         <!-- bas du jumbotron -->
         <div class="container-fluid sub-jumb">
           <ul class="barre-rouge ml-5">
-            <li class="text-white"><p> <i class="fa fa-phone" aria-hidden="true"></i> (+000) 009 455 4088</p></li>
-            <li class="ml-5"><button type="button" class="btn btn-dark rounded-0" data-toggle="modal" data-target="#login" data-whatever="@fat">LOGIN</button></li>
-            <li class="ml-1"><button type="button" class="btn btn-dark rounded-0" data-toggle="modal" data-target="#register" data-whatever="@getbootstrap">REGISTER</button></li>
+            <li class="text-white"><p>
+              <i class="fa fa-phone" aria-hidden="true"></i> (+000) 009 455 4088</p>
+            </li>
+            <li class="ml-5"><button type="button" class="btn btn-dark rounded-0" data-toggle="modal" data-target="#modalLogin" data-whatever="@fat">LOGIN</button></li>
+            <li class="ml-1"><button type="button" class="btn btn-dark rounded-0" data-toggle="modal" data-target="#modalRegister" data-whatever="@getbootstrap">REGISTER</button></li>
           </ul>
         </div>
-        <!-- fenetre login -->
-        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- modal login -->
+        <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="ModalLogin" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <h5 class="modal-title" id="login">Login</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                <form class="form">
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="input" class="sr-only">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
                   </div>
-                  <div class="form-group">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
                   </div>
+                  <div class="form-check mx-sm-3 mb-2">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Stay connected
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-danger mx-sm-3 mb-2">Confirm identity</button>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
+                <a href="#">Forgotten password ?</a>
+                <button type="button" class="btn btn-danger mx-sm-3 mb-2" data-toggle="modal" data-target="#modalRegister">Create an account</button>
+                <button type="button" class="btn btn-secondary mx-sm-3 mb-2" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
         </div>
-        <!-- fenetre register -->
-        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- modal register -->
+        <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                <h5 class="modal-title" id="register">Register</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                <form class="form">
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="input" class="sr-only">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
                   </div>
-                  <div class="form-group">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="input" class="sr-only">Surname</label>
+                    <input type="text" class="form-control" id="SurName" placeholder="Surname">
                   </div>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputEmail" class="sr-only">Email</label>
+                    <input type="text" class="form-control" id="EmailLogin" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
+                  </div>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword" class="sr-only">Confirm password</label>
+                    <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirm password">
+                  </div>
+                  <div class="form-check mx-sm-3 mb-2">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      I agree with the <a href="#">general conditions</a>
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-danger mx-sm-3 mb-2">Register</button>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
               </div>
             </div>
           </div>
@@ -237,16 +265,18 @@
       <div class="row">
         <div class="col-xl-10 offset-xl-1">
 
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
+          <div id="carouselFilms" class="carousel slide" data-ride="carousel" data-interval="10000">
             <div class="carousel-inner border">
               <div class="carousel-item bande-films active">
                 <div class="row">
                   <!-- 1 -->
                   <div class="col-xl-2">
                     <div class="card border-0">
-                      <img class="card-img-top rounded-0" src="asset/image/hostel-2005-thriller.jpg" alt="Card">
+                      <a class="modalFilms" data-toggle="modal" data-target="#modalFilm1" data-pause="hover">
+                        <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v1.png" alt="Card">
+                      </a>
                       <div class="card-body">
-                        <p class="card-text text-center m-0">Titre1</p>
+                        <a class="modalFilms" data-toggle="modal" data-target="#modalFilm1"><p class="card-text text-center m-0" data-target="#ModalFilm1">Titre1</p></a>
                         <ul class="info-films d-flex justify-content-between">
                           <li>2016</li>
                           <li class="font-weight-bold">Genre</li>
@@ -254,10 +284,12 @@
                       </div>
                     </div>
                   </div>
+
+
                   <!-- 2 -->
                   <div class="col-xl-2">
                     <div class="card border-0">
-                      <img class="card-img-top rounded-0" src="asset/image/hostel-2005-thriller.jpg" alt="Card">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v2.png" alt="Card">
                       <div class="card-body">
                         <p class="card-text text-center m-0">Titre1</p>
                         <ul class="info-films d-flex justify-content-between">
@@ -270,7 +302,7 @@
                   <!-- 3 -->
                   <div class="col-xl-2">
                     <div class="card border-0">
-                      <img class="card-img-top rounded-0" src="asset/image/hostel-2005-thriller.jpg" alt="Card image cap">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v3.png" alt="Card image cap">
                       <div class="card-body">
                         <p class="card-text text-center m-0">Titre1</p>
                         <ul class="info-films d-flex justify-content-between">
@@ -283,7 +315,7 @@
                   <!-- 4 -->
                   <div class="col-xl-2">
                     <div class="card border-0">
-                      <img class="card-img-top rounded-0" src="asset/image/hostel-2005-thriller.jpg" alt="Card image cap">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v4.png" alt="Card image cap">
                       <div class="card-body">
                         <p class="card-text text-center m-0">Titre1</p>
                         <ul class="info-films d-flex justify-content-between">
@@ -296,7 +328,7 @@
                   <!-- 5 -->
                   <div class="col-xl-2">
                     <div class="card border-0">
-                      <img class="card-img-top rounded-0" src="asset/image/hostel-2005-thriller.jpg" alt="Card image cap">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v5.png" alt="Card image cap">
                       <div class="card-body">
                         <p class="card-text text-center m-0">Titre1</p>
                         <ul class="info-films d-flex justify-content-between">
@@ -314,7 +346,7 @@
                   <!-- 6 -->
                   <div class="col-xl-2">
                     <div class="card border-0">
-                      <img class="card-img-top rounded-0" src="asset/image/hostel-2005-thriller.jpg" alt="Card">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v6.png" alt="Card">
                       <div class="card-body">
                         <p class="card-text text-center m-0">Titre2</p>
                         <ul class="info-films d-flex justify-content-between">
@@ -327,7 +359,7 @@
                   <!-- 7 -->
                   <div class="col-xl-2">
                     <div class="card border-0">
-                      <img class="card-img-top rounded-0" src="asset/image/hostel-2005-thriller.jpg" alt="Card">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v7.png" alt="Card">
                       <div class="card-body">
                         <p class="card-text text-center m-0">Titre2</p>
                         <ul class="info-films d-flex justify-content-between">
@@ -340,7 +372,7 @@
                   <!-- 8 -->
                   <div class="col-xl-2">
                     <div class="card border-0">
-                      <img class="card-img-top rounded-0" src="asset/image/hostel-2005-thriller.jpg" alt="Card image cap">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v8.png" alt="Card image cap">
                       <div class="card-body">
                         <p class="card-text text-center m-0">Titre2</p>
                         <ul class="info-films d-flex justify-content-between">
@@ -353,7 +385,7 @@
                   <!-- 9 -->
                   <div class="col-xl-2">
                     <div class="card border-0">
-                      <img class="card-img-top rounded-0" src="asset/image/hostel-2005-thriller.jpg" alt="Card image cap">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v9.png" alt="Card image cap">
                       <div class="card-body">
                         <p class="card-text text-center m-0">Titre2</p>
                         <ul class="info-films d-flex justify-content-between">
@@ -366,7 +398,7 @@
                   <!-- 10 -->
                   <div class="col-xl-2">
                     <div class="card border-0">
-                      <img class="card-img-top rounded-0" src="asset/image/hostel-2005-thriller.jpg" alt="Card image cap">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v10.png" alt="Card image cap">
                       <div class="card-body">
                         <p class="card-text text-center m-0">Titre2</p>
                         <ul class="info-films d-flex justify-content-between">
@@ -386,10 +418,37 @@
       </div> <!-- fin row principale-->
     </div> <!-- fin container luid -->
 
-    <!-- fleeeeeeeeeeeeeeeeeche -->
+    <!-- MODALS DES FILMS  -->
+
+    <!-- FILMS 1 -->
+    <div class="modal fade" id="modalFilm1" backdrop="true" tabindex="-1" role="dialog" aria-labelledby="filmDescriptionModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="Film1">Titre</h5>
+            <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <iframe src="https://www.youtube.com/embed/whFAsePy-w8" allowfullscreen="" frameborder="0" height="315" width="100%"></iframe>
+
+          <div class="modal-body">
+            Réalisateur, Année, Genre, Acteurs <br>
+            Description
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fleche -->
     <a href="#banniere" class="arrowTop" id="arrow"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 
 <!-- fin jacqueline -->
+
 <div class="container-fluid series">
   <h2>FEATURED MOVIES</h2>
   <div class="row">
@@ -439,7 +498,10 @@
   <div class="container-fluid shop">
     <h2>SHOP MOVIES</h2>
     <div class="row">
-      <p class="float-right"><span class="carousel_button" href="#carouselExampleControls" role="button" data-slide="prev"><</span><span class="carousel_button" href="#carouselExampleControls" role="button" data-slide="next">></span></p>
+      <div class="col-xl-1 offset-xl-11">
+        <span class="carousel_button" href="#carouselExampleControls" role="button" data-slide="prev"><</span>
+        <span class="carousel_button" href="#carouselExampleControls" role="button" data-slide="next">></span>
+      </div>
     </div>
     <div class="row">
         <div class="col-xl order-12">
@@ -619,6 +681,9 @@
       </div>
     </div>
   </div>
+
+
+
 
 
   <div class="container-fluid contact">

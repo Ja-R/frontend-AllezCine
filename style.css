@@ -115,10 +115,10 @@ ul.onglet{
   padding-left: 110px; /*bidouillages*/
 }
 
-.films{
-  width: 160px;
-  height: 230px;
-}
+/*.films{
+  width: 130px;
+  height: 200px;
+}*/
 
 ul.info-films{
   list-style-type: none;
@@ -126,22 +126,29 @@ ul.info-films{
   padding: 0;
 }
 
+/*modal films*/
+
+a.modalFilms:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /*icone fleche to the top*/
 
 a.arrowTop{
   position: fixed;
   z-index: 50;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   color: white;
   background-color: #0D0D0D;
-  padding: 5px 8px;
+  padding: 8px 12px;
   border: 3px solid red;
   border-radius: 50%;
 }
 
 a.arrowTop:hover{
-  padding: 8px 11px;
+  padding: 10px 13px;
 }
 
 
