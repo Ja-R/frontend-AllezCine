@@ -13,13 +13,19 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
+    <header id="banniere">
+      <div id="cookie-message">
+          <p>
+              AllezCine! uses cookies to ensure we give you the best experience on our website.
+              <a href="cookie-policy.html" title="View our Cookie Policy">Find out more about cookies</a>
+      </p>
+      </div>
       <!-- jumbotron -->
       <div class="jumbotron p-0" id="home">
 
         <!-- navigation -->
         <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-transparent" id="navigation">
-          <a class="navbar-brand text-white" href="#"><h1 class="display-6 mt-3"> <span class="rouge">ALLEZ</span>CINE!</h1></a>
+          <a class="navbar-brand text-white" href="#"><h1 class="display-6 mt-3 text-uppercase"> <span class="rouge">Allez</span>Cine!</h1></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,19 +33,10 @@
           <div class="collapse navbar-collapse p-0" id="navbarSupportedContent">
             <ul class="navbar-nav mt-0">
               <li class="nav-item active">
-                <a class="nav-link rouge" href="home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link rouge" href="#" id="HomeNav">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle fd-transparent text-white ml-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Films
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Comedy</a>
-                  <a class="dropdown-item" href="#">Western</a>
-                  <a class="dropdown-item" href="#">Fiction</a>
-                  <br>
-                </div>
+              <li class="nav-item">
+                <a class="nav-link fd-transparent text-white ml-1" href="#">Films</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fd-transparent text-white ml-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -72,69 +69,62 @@
                 <a class="nav-link text-white" href="#">Contact</a>
               </li>
             </ul>
-<!-- nico -->
-            <!-- <form class="input-group">
-              <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche" aria-describedby="basic-addon1">
+          </div>
+            <form class="input-group w-25 ml-5">
+              <input type="text" class="form-control fd-noir-transparent border-0" placeholder="Recherche" aria-label="Search" aria-describedby="basic-addon1">
                 <div class="input-group-append">
-                <span class="input-group-text" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i>
+                <span class="input-group-text fd-noir-transparent border-0" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i>
                 </span>
               </div>
-            </form> -->
-<!-- moi -->
-              <form class="form-inline ml-5 rounded">
-                <input class="form-control fd-noir-transparent border-0" type="search" placeholder="Recherche" aria-label="Search">
-                <button class="btn my-2 my-sm-0 fd-noir-transparent" type="submit">  <i class="fa fa-search" aria-hidden="true"></i></button>
-              </form>
-
-          </div>
+            </form>
         </nav>
 
         <!-- slider -->
         <div id="carouselHeader" class="carousel slide" data-ride="carousel" data-interval="2000">
           <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselHeader" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselHeader" data-slide-to="1"></li>
+            <li data-target="#carouselHeader" data-slide-to="2"></li>
+            <li data-target="#carouselHeader" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="asset/image/i1.jpg" alt="First slide">
+              <img class="d-block w-100 shadow" src="asset/image/i1.jpg" alt="First slide">
               <div class="carousel-caption mb-5">
-                <h1 class="display-4 text-center">LATEST <span class="rouge">ON</span>LINE <span class="rouge">MO</span>VIES</h1>
+                <h1 class="display-4 text-center text-uppercase">LATEST <span class="rouge">ON</span>LINE <span class="rouge">MO</span>VIES</h1>
                 <p class="lead text-center">In space no one can hear you scream.</p>
                 <p class="lead text-center">
-                  <a class="btn btn-danger btn-lg rounded-0" href="#" role="button">WATCH TRAILER</a>
+                  <a class="btn btn-danger btn-lg rounded-0 btn-trailer" href="#" role="button">WATCH TRAILER</a>
                 </p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="asset/image/i2.jpg" alt="Second slide">
+              <img class="d-block w-100 shadow" src="asset/image/i2.jpg" alt="Second slide">
               <div class="carousel-caption mb-5">
-                <h1 class="display-4 text-center"> LATEST <span class="rouge">ON</span>LINE <span class="rouge">MO</span>VIES</h1>
+                <h1 class="display-4 text-center text-uppercase"> LATEST <span class="rouge">ON</span>LINE <span class="rouge">MO</span>VIES</h1>
                 <p class="lead text-center">In space someone can hear you scream.</p>
                 <p class="lead text-center">
-                  <a class="btn btn-danger btn-lg rounded-0" href="#" role="button">WATCH TRAILER</a>
+                  <a class="btn btn-danger btn-lg rounded-0 btn-trailer" href="#" role="button">WATCH TRAILER</a>
                 </p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="asset/image/i3.jpg" alt="Third slide">
+              <img class="d-block w-100 shadow" src="asset/image/i3.jpg" alt="Third slide">
               <div class="carousel-caption mb-5">
-                <h1 class="display-4 text-center"> LATEST <span class="rouge">ON</span>LINE <span class="rouge">MO</span>VIES</h1>
+                <h1 class="display-4 text-center text-uppercase"> LATEST <span class="rouge">ON</span>LINE <span class="rouge">MO</span>VIES</h1>
                 <p class="lead text-center">In space no one can hear you scream.</p>
                 <p class="lead text-center">
-                  <a class="btn btn-danger btn-lg rounded-0" href="#" role="button">WATCH TRAILER</a>
+                  <a class="btn btn-danger btn-lg rounded-0 btn-trailer" href="#" role="button">WATCH TRAILER</a>
                 </p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="asset/image/i4.jpg" alt="Third slide">
+              <img class="d-block w-100 shadow" src="asset/image/i4.jpg" alt="Third slide">
               <div class="carousel-caption mb-5">
-                <h1 class="display-4 text-center"> LATEST <span class="rouge">ON</span>LINE <span class="rouge">MO</span>VIES</h1>
+                <h1 class="display-4 text-center text-uppercase"> LATEST <span class="rouge">ON</span>LINE <span class="rouge">MO</span>VIES</h1>
                 <p class="lead text-center">In space no one can hear you scream.</p>
                 <p class="lead text-center">
-                  <a class="btn btn-danger btn-lg rounded-0" href="#" role="button">WATCH TRAILER</a>
+                  <a class="btn btn-danger btn-lg rounded-0 btn-trailer" href="#" role="button">WATCH TRAILER</a>
                 </p>
               </div>
             </div>
@@ -143,158 +133,472 @@
 
         <!-- bas du jumbotron -->
         <div class="container-fluid sub-jumb">
-          <div class="row">
-            <div class="col-lg-2 text-white ">
-              <p> <i class="fa fa-phone" aria-hidden="true"></i> (+000) 009 455 4088</p>
-            </div>
-            <div class="col-lg-1">
-              <button type="button" class="btn btn-dark rounded-0" data-toggle="modal" data-target="#login" data-whatever="@fat">LOGIN</button>
-            </div>
-            <div class="col-lg-1">
-              <button type="button" class="btn btn-dark rounded-0" data-toggle="modal" data-target="#register" data-whatever="@getbootstrap">REGISTER</button>
-            </div>
-          </div>
+          <ul class="barre-rouge ml-5">
+            <li class="text-white"><p>
+              <i class="fa fa-phone" aria-hidden="true"></i> (+000) 009 455 4088</p>
+            </li>
+            <li class="ml-5"><button type="button" class="btn btn-dark rounded-0" data-toggle="modal" data-target="#modalLogin" data-whatever="@fat">LOGIN</button></li>
+            <li class="ml-1"><button type="button" class="btn btn-dark rounded-0" data-toggle="modal" data-target="#modalRegister" data-whatever="@getbootstrap">REGISTER</button></li>
+          </ul>
         </div>
-        <!-- fenetre login -->
-        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- modal login -->
+        <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="ModalLogin" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <h5 class="modal-title" id="login">Login</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                <form class="form">
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="input" class="sr-only">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
                   </div>
-                  <div class="form-group">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
                   </div>
+                  <div class="form-check mx-sm-3 mb-2">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Stay connected
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-danger mx-sm-3 mb-2">Confirm identity</button>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
+                <a href="#">Forgotten password ?</a>
+                <button type="button" class="btn btn-danger mx-sm-3 mb-2" data-toggle="modal" data-target="#modalRegister">Create an account</button>
+                <button type="button" class="btn btn-secondary mx-sm-3 mb-2" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
         </div>
-        <!-- fenetre register -->
-        <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- modal register -->
+        <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                <h5 class="modal-title" id="register">Register</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                <form class="form">
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="input" class="sr-only">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
                   </div>
-                  <div class="form-group">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="input" class="sr-only">Surname</label>
+                    <input type="text" class="form-control" id="SurName" placeholder="Surname">
                   </div>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputEmail" class="sr-only">Email</label>
+                    <input type="text" class="form-control" id="EmailLogin" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
+                  </div>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword" class="sr-only">Confirm password</label>
+                    <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirm password">
+                  </div>
+                  <div class="form-check mx-sm-3 mb-2">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      I agree with the <a href="#">general conditions</a>
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-danger mx-sm-3 mb-2">Register</button>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
               </div>
             </div>
           </div>
         </div>
 
       </div> <!-- fin jumbotron -->
+    </header>
+
+    <!-- reseaux -->
+    <div class="btn-group-vertical" id="reseaux">
+      <button type="button" class="btn btn-onglet text-white" id="onglet-twitter">
+        <ul class="onglet">
+          <li>Twitter </li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+        </ul>
+      </button>
+      <button type="button" class="btn btn-onglet text-white" id="onglet-facebook">
+        <ul class="onglet">
+          <li>Facebook </li>
+          <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+        </ul>
+      </button>
+      <button type="button" class="btn btn-onglet text-white" id="onglet-dribbble">
+        <ul class="onglet">
+          <li>Dribbble </li>
+          <li><i class="fa fa-dribbble" aria-hidden="true"></i></li>
+        </ul>
+      </button>
+      <button type="button" class="btn btn-onglet text-white" id="onglet-google">
+        <ul class="onglet">
+          <li>Google+ </li>
+          <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+        </ul>
+      </button>
+    </div>
+
+    <!-- slider films -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 offset-xl-1">
+
+          <div id="carouselFilms" class="carousel slide" data-ride="carousel" data-interval="10000">
+            <div class="carousel-inner border">
+
+              <div class="carousel-item bande-films active">
+                <div class="row">
+                  <!-- 1 -->
+                  <div class="col-xl-2">
+                    <div class="card border-0">
+                      <a class="modalFilm" data-toggle="modal" data-target="#filmFiche">
+                        <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v1.png" alt="Card">
+                      </a>
+                      <div class="card-body">
+                        <a class="modalFilm" data-toggle="modal" data-target="#filmFiche">
+                          <p class="card-text text-center m-0">Titre1</p>
+                        </a>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>2016</li>
+                          <li class="font-weight-bold">Genre</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2 -->
+                  <div class="col-xl-2">
+                    <div class="card border-0">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v2.png" alt="Card">
+                      <div class="card-body">
+                        <p class="card-text text-center m-0">Titre1</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>2016</li>
+                          <li class="font-weight-bold">Genre</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="col-xl-2">
+                    <div class="card border-0">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v3.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center m-0">Titre1</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>2016</li>
+                          <li class="font-weight-bold">Genre</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div class="col-xl-2">
+                    <div class="card border-0">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v4.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center m-0">Titre1</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>2016</li>
+                          <li class="font-weight-bold">Genre</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 5 -->
+                  <div class="col-xl-2">
+                    <div class="card border-0">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v5.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center m-0">Titre1</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>2016</li>
+                          <li class="font-weight-bold">Genre</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- fin row slide part 1 -->
+              </div>
+
+              <div class="carousel-item bande-films">
+                <div class="row">
+                  <!-- 6 -->
+                  <div class="col-xl-2">
+                    <div class="card border-0">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v6.png" alt="Card">
+                      <div class="card-body">
+                        <p class="card-text text-center m-0">Titre2</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>2016</li>
+                          <li class="font-weight-bold">Genre</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 7 -->
+                  <div class="col-xl-2">
+                    <div class="card border-0">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v7.png" alt="Card">
+                      <div class="card-body">
+                        <p class="card-text text-center m-0">Titre2</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>2016</li>
+                          <li class="font-weight-bold">Genre</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 8 -->
+                  <div class="col-xl-2">
+                    <div class="card border-0">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v8.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center m-0">Titre2</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>2016</li>
+                          <li class="font-weight-bold">Genre</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 9 -->
+                  <div class="col-xl-2">
+                    <div class="card border-0">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v9.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center m-0">Titre2</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>2016</li>
+                          <li class="font-weight-bold">Genre</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 10 -->
+                  <div class="col-xl-2">
+                    <div class="card border-0">
+                      <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v10.png" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text text-center m-0">Titre2</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>2016</li>
+                          <li class="font-weight-bold">Genre</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- fin row slide part 2 -->
+
+              </div> <!-- fin carou item 2-->
+
+            </div> <!-- fin row slide INNER -->
+          </div> <!-- fin carousel control -->
+        </div>  <!-- fin col 10 -->
+      </div> <!-- fin row principale-->
+    </div> <!-- fin container luid -->
+
+    <!-- MODALS DES FILMS  -->
+
+    <!-- FILMS 1 -->
+    <div class="modal fade" id="filmFiche" backdrop="true" tabindex="-1" role="dialog" aria-labelledby="filmDescriptionModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ficheTitre">Titre</h5>
+            <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <iframe id="ficheTrailer" src="https://www.youtube.com/embed/whFAsePy-w8" allowfullscreen="" frameborder="0" height="315" width="100%"></iframe>
+          <div class="modal-body">
+            <p id="ficheInfo">
+              Réalisateur, Année, Genre, Acteurs <br>
+              Description
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fleche -->
+    <a href="#banniere" class="arrowTop" id="arrow"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+<!-- fin jacqueline -->
+
+<div class="container-fluid series">
+  <h2>FEATURED MOVIES</h2>
+  <div class="row">
+    <div class="col-10 offset-1 col-sm col-xl-10 offset-xl-1">
+      <div class="row">
+        <button id="showAllMovies">All</button>
+        <button id="showAllActionMovies">Action</button>
+        <button id="showAllAdventureMovies">Adventure</button>
+        <button id="showAllComedyMovies">Comedy</button>
+        <button id="showAllFantasyMovies">Fantasy</button>
+        <button id="showAllHorrorMovies">Horror</button>
+      </div>
+      <div id="featuredMoviesContainer" class="row">
+      </div>
+      <div class="row">
+        <button id="showMoreOrLessMovies"></button>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid series">
+    <h2>FEATURED SERIES</h2>
+    <div class="row">
+      <div class="col-10 offset-1 col-sm col-xl-10 offset-xl-1">
+        <div class="row">
+          <button id="showAllSeries">All</button>
+          <button id="showAllActionSeries">Action</button>
+          <button id="showAllAdventureSeries">Adventure</button>
+          <button id="showAllComedySeries">Comedy</button>
+          <button id="showAllFantasySeries">Fantasy</button>
+        </div>
+        <div id="featuredSeriesContainer" class="row">
+        </div>
+        <div class="row">
+          <button id="showMoreOrLessSeries"></button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
 
   <div class="container-fluid shop">
     <h2>SHOP MOVIES</h2>
-    <p><span class="carousel_button" href="#carouselExampleControls" role="button" data-slide="prev"><</span><span class="carousel_button" href="#carouselExampleControls" role="button" data-slide="next">></span></p>
     <div class="row">
-      <div class="col-xl-7">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="false">
+      <div class="col-3 offset-9 col-sm-2 offset-sm-10 col-xl-1 offset-xl-11">
+        <span class="carousel_button" href="#shopCarousel" role="button" data-slide="prev"><</span>
+        <span class="carousel_button" href="#shopCarousel" role="button" data-slide="next">></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-5 order-12 trailer_frame">
+        <div class="card">
+          <iframe id="trailerFrame" src="https://www.youtube.com/embed/4839KJuXfGc?rel=0&amp;controls=0" frameborder="0"></iframe>
+          <div class="card-body trailer">
+            <p id="trailerTitle" class="card-text">Les Tuches 3</p>
+            <p id="trailerYear" class="card-text">18888</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-10 offset-sm-1 col-xl-7 offset-xl-0 order-1">
+        <div id="shopCarousel" class="carousel slide" data-ride="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
-                <div class="col-xl-3 shop">
+                <div class="col-6 col-md-3 col-xl-3 shop">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Les Tuches 3')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
-                      <p class="card-text year">Some<span>Some</span></p>
+                        <p class="card-text text-center m-0">Les Tuches 3</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>2018</li>
+                          <li class="font-weight-bold">Comedy</li>
+                        </ul>
+          
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3 shop">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars I')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
-                      <p class="card-text year">Some<span>Some</span></p>
+                        <p class="card-text text-center m-0">Star Wars I</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>1999</li>
+                          <li class="font-weight-bold">Action</li>
+                        </ul>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars II')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
-                      <p class="card-text year">Some<span>Some</span></p>
+                        <p class="card-text text-center m-0">Star Wars II</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>200.</li>
+                          <li class="font-weight-bold">Action</li>
+                        </ul>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars III')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
-                      <p class="card-text year">Some<span>Some</span></p>
+                        <p class="card-text text-center m-0">Star Wars III</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>20..</li>
+                          <li class="font-weight-bold">Action</li>
+                        </ul>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-xl-3">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars IV')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
+                      <p class="card-text title">Star Wars IV</p>
                       <p class="card-text year">Some<span>Some</span></p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars V')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
+                      <p class="card-text title">Star Wars V</p>
                       <p class="card-text year">Some<span>Some</span></p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars VI')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
+                      <p class="card-text title">Star Wars VI</p>
                       <p class="card-text year">Some<span>Some</span></p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars VII')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
+                      <p class="card-text title">Star Wars VII</p>
                       <p class="card-text year">Some<span>Some</span></p>
                     </div>
                   </div>
@@ -303,76 +607,76 @@
             </div>
             <div class="carousel-item">
                 <div class="row">
-                  <div class="col-xl-3 shop">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars VIII')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">Star Wars VIII</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3 shop">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Rogue One: A Star Wars Story')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">Rogue One: A Star Wars Story</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('The Matrix')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">The Matrix</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('The Matrix Reloaded')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">The Matrix Reloaded</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-xl-3">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('The Matrix Revolutions')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">The Matrix Revolutions</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars I')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">Star Wars I</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars II')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">Star Wars II</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars III')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">Star Wars III</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
@@ -383,43 +687,72 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-5">
-        
-      </div>
     </div>
   </div>
-  
-  
+
+
+
+
+
   <div class="container-fluid contact">
     <h2>CONTACT US</h2>
-      <form class="col-xl-8 offset-xl-2">
+    <div class="row">
+      <form class="col-lg-6 col-xl-6" onsubmit="return false">
           <div class="row">
             <div class="form-group col">
-              <input type="text" class="form-control" placeholder="First name">
+              <input id="formFirstName" type="text" class="form-control" placeholder="First name" required>
             </div>
             <div class="form-group col">
-              <input type="text" class="form-control" placeholder="Last name">
+              <input id="formLastName" type="text" class="form-control" placeholder="Last name" required>
             </div>
           </div>
           <div class="row">
             <div class="form-group col">
-                <input type="text" class="form-control" placeholder="Email">
+                <input id="formEmail" type="text" class="form-control" placeholder="Email" required>
             </div>
             <div class="form-group col">
-                <input type="text" class="form-control" placeholder="Subject">
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group col">
-              <textarea type="text" class="form-control" placeholder="YOUR MESSAGE" rows="5"></textarea>
+                <input id="formSubject" type="text" class="form-control" placeholder="Subject" required>
             </div>
           </div>
           <div class="row">
             <div class="form-group col">
-              <input type="submit" value="SEND MESSAGE">
+              <textarea type="text" class="form-control" placeholder="YOUR MESSAGE" rows="5" required></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col">
+              <Button onclick="fillModal()" type="button" class="form_button" data-toggle="modal" data-target="#contactModal">
+                SEND YOUR MESSAGE
+              </Button>
             </div>
           </div>
         </form>
+        <div class="col-lg-5 col-xl-5">
+            <div class="container" id="map"></div>
+        </div>
+      </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Your message has been sent</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="modalFirstName"></p>
+          <p id="modalLastName"></p>
+          <p id="modalEmail"></p>
+          <p id="modalSubject"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
   <footer class="container-fluid">
     <div class="row">
@@ -430,7 +763,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xl">
+      <div class="col-sm-8 offset-sm-2 col-xl offset-xl-0">
       <h4>RELEASES</h4>
       <hr class="my-2">
       <ul>
@@ -442,7 +775,7 @@
         <li>2013</li>
       </ul>
       </div>
-      <div class="col-xl">
+      <div class="col-sm-8 offset-sm-2 col-xl offset-xl-0">
       <h4>MOVIES</h4>
       <hr class="my-2">
       <ul>
@@ -454,7 +787,7 @@
         <li>HORROR</li>
       </ul>
       </div>
-      <div class="col-xl">
+      <div class="col-sm-8 offset-sm-2 col-xl offset-xl-0">
       <h4>REVIEW MOVIES</h4>
       <hr class="my-2">
       <a href="#">Comedy</a>
@@ -473,30 +806,32 @@
       <a href="#">Horror</a>
       <a href="#">Historical</a>
       </div>
-      <div class="col-xl">
-      <h4>LATEST MOVIES</h4>
-      <hr class="my-2">
-      <div class="row">
-      <iframe class="col-xl-5" src="#" frameborder="0"></iframe>
-      <p class="col-xl-7">Lorem ipsum dolor</p>
+      <div class="col-sm-8 offset-sm-2 col-xl offset-xl-0">
+        <h4>LATEST MOVIES</h4>
+        <hr class="my-2">
+        <div class="row">
+        <div class="col-4 offset-4 col-sm offset-sm-0 col-xl-12 offset-xl-0">
+          <iframe src="#" frameborder="0"></iframe>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="col-4 offset-4 col-sm offset-sm-0 col-xl-12 offset-xl-0">
+          <iframe src="#" frameborder="0"></iframe>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="col-4 offset-4 col-sm offset-sm-0 col-xl-12 offset-xl-0">
+          <iframe src="#" frameborder="0"></iframe>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="col-4 offset-4 col-sm offset-sm-0 col-xl-12 offset-xl-0">
+          <iframe src="#" frameborder="0"></iframe>
+          <p>Lorem ipsum dolor</p>
+        </div>
       </div>
-      <div class="row">
-        <iframe class="col-xl-5" src="#" frameborder="0"></iframe>
-        <p class="col-xl-7">Lorem ipsum dolor</p>
       </div>
-      <div class="row">
-        <iframe class="col-xl-5" src="#" frameborder="0"></iframe>
-        <p class="col-xl-7">Lorem ipsum dolor</p>
-      </div>
-      <div class="row">
-        <iframe class="col-xl-5" src="#" frameborder="0"></iframe>
-        <p class="col-xl-7">Lorem ipsum dolor</p>
-      </div>
-      </div>
-      <div class="xl-col">
-        <h3> <span>ALLEZ</span>CINE!</h3>
+      <div class="col-sm-8 offset-sm-2 col-xl offset-xl-0">
+        <h3> <span class="rouge">ALLEZ</span>CINE!</h3>
         <hr class="my-1 allezcine">
-        <div class="container">
+        <div class="offset-sm-2 col-lg-6 offset-lg-3 col-lg-12 offset-xl-0 container">
           <div class="row allezcine">
             <img src="asset/image/batmanmini.jpg" alt="">
             <img src="asset/image/hostelmini.jpg" alt="">
@@ -525,9 +860,14 @@
 
     </div>
   </footer>
+<script src="googlemap.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9sTQJRyinE9LapVdL_afiomfTUBJTN2g&callback=myMap"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="myjs.js"></script>  
+<script src="myjs.js"></script>
+<script type="text/javascript" src="arrowtop.js"></script>
+
+
 </body>
 </html>
