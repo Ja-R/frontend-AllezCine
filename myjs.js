@@ -124,10 +124,30 @@ let displayFeatured = function (container, data, bool, button){
         poster.className = 'poster';
         poster.src = 'asset/image/' + data[i].image + '.jpg';
         
-        let description = document.createTextNode(data[i].title + ' ' + data[i].genre + ' ' + data[i].year);
+        let pTitle = document.createElement('P');
+        pTitle.className = 'text-center m-0';
+        pTitle.appendChild(document.createTextNode(data[i].title));
+
+        let descriptionListElementYear = document.createElement('LI');
+        descriptionListElementYear.appendChild(document.createTextNode(data[i].year));
+
+        let descriptionListElementGenre = document.createElement('LI');
+        descriptionListElementGenre.className = 'font-weight-bold';
+        descriptionListElementGenre.appendChild(document.createTextNode(data[i].genre));
+
+        let descriptionList = document.createElement('UL');
+        descriptionList.className = 'info-films d-flex justify-content-between';
+        descriptionList.appendChild(descriptionListElementYear);
+        descriptionList.appendChild(descriptionListElementGenre);
+
+        
+        let description = document.createElement('DIV');
+        description.appendChild(pTitle);
+        description.appendChild(descriptionList);
+
         
         let wrap = document.createElement('DIV');
-        wrap.className = 'col-xl-2 feat_wrap';
+        wrap.className = 'col-8 offset-2 col-sm-4 offset-sm-1 col-md-3 offset-md-0 col-lg-2 col-xl-2 offset-xl-0 feat_wrap';
         wrap.appendChild(poster);
         wrap.appendChild(description);
         
@@ -194,10 +214,29 @@ let genreFilter = function(filter, container, data, button){
             poster.className = 'poster';
             poster.src = 'asset/image/' + data[i].image + '.jpg';
 
-            let description = document.createTextNode(data[i].title + ' ' + data[i].genre + ' ' + data[i].year);
+            let pTitle = document.createElement('P');
+            pTitle.className = 'text-center m-0';
+            pTitle.appendChild(document.createTextNode(data[i].title));
+
+            let descriptionListElementYear = document.createElement('LI');
+            descriptionListElementYear.appendChild(document.createTextNode(data[i].year));
+
+            let descriptionListElementGenre = document.createElement('LI');
+            descriptionListElementGenre.className = 'font-weight-bold';
+            descriptionListElementGenre.appendChild(document.createTextNode(data[i].genre));
+
+            let descriptionList = document.createElement('UL');
+            descriptionList.className = 'info-films d-flex justify-content-between';
+            descriptionList.appendChild(descriptionListElementYear);
+            descriptionList.appendChild(descriptionListElementGenre);
+
+            
+            let description = document.createElement('DIV');
+            description.appendChild(pTitle);
+            description.appendChild(descriptionList);
             
             let wrap = document.createElement('DIV');
-            wrap.className = 'col-xl-2';
+            wrap.className = 'col-8 offset-2 col-sm-4 offset-sm-1 col-md-3 offset-md-0 col-lg-2 col-xl-2 offset-xl-0 feat_wrap';
             wrap.appendChild(poster);
             wrap.appendChild(description);
 
@@ -242,10 +281,7 @@ let showAllFantasySeries = document.getElementById('showAllFantasySeries');
 showAllFantasySeries.addEventListener('click', function(){
     genreFilter('Fantasy', featuredSeriesContainer, featuredSeries, showSeries);
 });
-let showAllHorrorSeries = document.getElementById('showAllHorrorSeries');
-showAllHorrorSeries.addEventListener('click', function(){
-    genreFilter('Horror', featuredSeriesContainer, featuredSeries, showSeries);
-});
+
 
 displayFeatured(featuredMoviesContainer, featuredMovies, allMoviesDisplayed, showMovies);
 displayFeatured(featuredSeriesContainer, featuredSeries, allSeriesDisplayed, showSeries);
@@ -281,4 +317,20 @@ let showTrailer = function(title){
             trailerYear.innerHTML = trailersList[i].year;
         }
     }
+}
+
+const formFirstName = document.getElementById('formFirstName');
+const formLastName = document.getElementById('formLastName');
+const formEmail = document.getElementById('formEmail');
+const formSubject = document.getElementById('formSubject');
+const modalFirstName = document.getElementById('modalFirstName');
+const modalLastName = document.getElementById('modalLastName');
+const modalEmail = document.getElementById('modalEmail');
+const modalSubject = document.getElementById('modalSubject');
+
+let fillModal = function(){
+    modalFirstName.innerHTML = 'First Name: ' + formFirstName.value;
+    modalLastName.innerHTML = 'Last Name: ' + formLastName.value;
+    modalEmail.innerHTML = 'Email: ' + formEmail.value;
+    modalSubject.innerHTML = 'Subject of your message: ' + formSubject.value;
 }
