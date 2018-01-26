@@ -14,6 +14,12 @@
   </head>
   <body>
     <header id="banniere">
+        <div id="cookie-message">
+            <p>
+                AllezCine! uses cookies to ensure we give you the best experience on our website.
+                <a href="cookie-policy.html" title="View our Cookie Policy">Find out more about cookies</a>
+        </p>
+        </div>
       <!-- jumbotron -->
       <div class="jumbotron p-0" id="home">
 
@@ -495,52 +501,52 @@
       </div>
     </div>
     <div class="row">
-        <div class="col-xl order-12">
+        <div class="col-xl-5 order-12">
             <div class="card">
-              <iframe src="" frameborder="0"></iframe>
+              <iframe id="trailerFrame" src="https://www.youtube.com/embed/4839KJuXfGc?rel=0&amp;controls=0" frameborder="0"></iframe>
               <div class="card-body trailer">
-                <p class="card-text">Some quick</p>
-                <p class="card-text">SomeSome</p>
+                <p id="trailerTitle" class="card-text">Les Tuches 3</p>
+                <p id="trailerYear" class="card-text">18888</p>
               </div>
             </div>
           </div>
       <div class="col-xl-7 order-1">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="false">
+        <div id="shopCarousel" class="carousel slide" data-ride="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
                 <div class="col-xl-3 shop">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Les Tuches 3')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
+                      <p class="card-text title">Les Tuches 3</p>
                       <p class="card-text year">Some<span>Some</span></p>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3 shop">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars I')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
+                      <p class="card-text title">Star Wars I</p>
                       <p class="card-text year">Some<span>Some</span></p>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars II')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
+                      <p class="card-text title">Star Wars II</p>
                       <p class="card-text year">Some<span>Some</span></p>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars III')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
+                      <p class="card-text title">Star Wars III</p>
                       <p class="card-text year">Some<span>Some</span></p>
                     </div>
                   </div>
@@ -549,36 +555,36 @@
               <div class="row">
                 <div class="col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars IV')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
+                      <p class="card-text title">Star Wars IV</p>
                       <p class="card-text year">Some<span>Some</span></p>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars V')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
+                      <p class="card-text title">Star Wars V</p>
                       <p class="card-text year">Some<span>Some</span></p>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars VI')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
+                      <p class="card-text title">Star Wars VI</p>
                       <p class="card-text year">Some<span>Some</span></p>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-3">
                   <div class="card">
-                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars VII')">
                     <div class="card-body">
-                      <p class="card-text title">Some quick</p>
+                      <p class="card-text title">Star Wars VII</p>
                       <p class="card-text year">Some<span>Some</span></p>
                     </div>
                   </div>
@@ -589,36 +595,36 @@
                 <div class="row">
                   <div class="col-xl-3 shop">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars VIII')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">Star Wars VIII</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
                   <div class="col-xl-3 shop">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Rogue One: A Star Wars Story')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">Rogue One: A Star Wars Story</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
                   <div class="col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('The Matrix')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">The Matrix</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
                   <div class="col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('The Matrix Reloaded')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">The Matrix Reloaded</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
@@ -627,36 +633,36 @@
                 <div class="row">
                   <div class="col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('The Matrix Revolutions')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">The Matrix Revolutions</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
                   <div class="col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars I')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">Star Wars I</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
                   <div class="col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars II')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">Star Wars II</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
                   </div>
                   <div class="col-xl-3">
                     <div class="card">
-                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap">
+                      <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars III')">
                       <div class="card-body">
-                        <p class="card-text title">Some quick</p>
+                        <p class="card-text title">Star Wars III</p>
                         <p class="card-text year">Some<span>Some</span></p>
                       </div>
                     </div>
@@ -679,7 +685,8 @@
 
   <div class="container-fluid contact">
     <h2>CONTACT US</h2>
-      <form class="col-xl-8 offset-xl-2">
+    <div class="row">
+      <form id="myForm" class="col-xl-6">
           <div class="row">
             <div class="form-group col">
               <input type="text" class="form-control" placeholder="First name">
@@ -703,10 +710,36 @@
           </div>
           <div class="row">
             <div class="form-group col">
-              <input type="submit" value="SEND MESSAGE">
+              <Button class="form_button" data-toggle="modal" data-target="#contactModal">
+                SEND YOUR MESSAGE
+              </Button>
             </div>
           </div>
         </form>
+        <div class="col-xl-5">
+            <div class="container" id="map"></div>
+        </div>
+      </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
   </div>
   <footer class="container-fluid">
     <div class="row">
@@ -781,7 +814,7 @@
       </div>
       </div>
       <div class="xl-col">
-        <h3> <span>ALLEZ</span>CINE!</h3>
+        <h3> <span class="rouge">ALLEZ</span>CINE!</h3>
         <hr class="my-1 allezcine">
         <div class="container">
           <div class="row allezcine">
@@ -812,6 +845,8 @@
 
     </div>
   </footer>
+<script src="googlemap.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9sTQJRyinE9LapVdL_afiomfTUBJTN2g&callback=myMap"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

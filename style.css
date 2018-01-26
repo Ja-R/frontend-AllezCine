@@ -1,6 +1,9 @@
 body{
   font-family: 'Lato', sans-serif;
 }
+.js_enabled #cookie-message {
+  display: none;
+}
 
 .rouge{
   color: #FE423E !important;
@@ -180,7 +183,8 @@ a.arrowTop:hover{
 
 footer{
   background-color: #0D0D0D;
-  padding-top: 10px;
+  padding-top: 20px;
+  margin-top: 15px;
   font-size: 0.75em;
 
 }
@@ -198,6 +202,7 @@ footer h4{
 
 footer h3{
   margin-bottom: 0 !important;
+  color: #A29FA1;
 }
 
 div .allezcine{
@@ -218,10 +223,13 @@ footer ul{
 
 .connect{
   text-align: center;
+  margin-bottom: 30px;
 }
 .connect i{
   padding: 5px;
   border: 1px solid #FFF;
+  width: 25px;
+  color: #FFF;
 }
 
 .subscribe{
@@ -235,7 +243,7 @@ footer ul{
   border: none;
 }
 
-input[type="submit"]{
+.form_button{
   border: none;
   font-weight: bold;
   padding: 5px;
@@ -280,12 +288,49 @@ footer img{
 .shop .card, .shop .card-img-top{
   border-radius: 0;
 }
+.shop .card{
+  margin-left: 15px;
+  margin-right: 0;
+}
 .shop p{
   color: #0D0D0D;
+  cursor: pointer;
 }
 .shop span.carousel_button{
   color: #A29FA1;
   background-color: #0D0D0D;
   border: 1px solid #A29FA1;
   font-size: 1.5em;
+}
+.poster{
+  width: 150px;
+  height: 250px;
+}
+
+#trailerTitle, #trailerYear{
+  color: #FE4240;
+}
+.card-body.trailer{
+  min-height: 200px;
+}
+.index{
+  background-color: #0D0D0D;
+}
+.question_box{
+  margin-top: 100px;
+  background-color: #FFF;
+  color: #0D0D0D
+}
+.question{
+  text-align: center;
+}
+.index a, .index a:visited{
+  text-decoration: none;
+  color: #0D0D0D
+}
+.index a:hover{
+  color: #FE4140;
+}
+#map{
+  min-height: 400px;
 }
