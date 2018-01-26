@@ -9,9 +9,9 @@ body{
   color: #FE423E !important;
 }
 
-/*.jumbotron{
+.jumbotron{
   position: relative !important;
-}*/
+}
 
 /* navigation */
 nav.navbar{
@@ -37,12 +37,16 @@ nav.navbar{
 }
 
 /* carousel header */
-.carousel{
+.carousel#carouselHeader{
   z-index: 5;
 }
 
-img.voile{
+.shadow{
   filter: brightness(0.30);
+}
+
+.lightness{
+  filter: none;
 }
 
 .carousel-indicators li {
@@ -127,8 +131,8 @@ ul.onglet{
 }
 
 /*.films{
-  width: 130px;
-  height: 200px;
+  width: 150px;
+  height: 250px;
 }*/
 
 ul.info-films{
@@ -139,7 +143,7 @@ ul.info-films{
 
 /*modal films*/
 
-a.modalFilms:hover{
+a.modalFilm:hover{
   font-weight: bold;
   cursor: pointer;
 }

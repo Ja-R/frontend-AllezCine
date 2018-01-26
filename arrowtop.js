@@ -16,19 +16,32 @@ $(document).ready(function(){
     }
   })
 
-  // carousel et modal
+  // carousel et modal !
 
   // stop
-  $(".modalFilms").click(function(){
-    $("#carouselFilms").carousel("pause");
-  });
-  // restart
-  $(".modal .btn").click(function(){
-    $("#carouselFilms").carousel("cycle");
-  });
+  function pauseCarousel(){
+    $(".modalFilms").click(function(){
+      $("#carouselFilms").carousel("pause");
+    });
+    // restart
+    $(".modal .btn").click(function(){
+      $("#carouselFilms").carousel("cycle");
+    });
+  }
+  pauseCarousel()
 
 
+  // shadow
+  function luminosite(){
+    $(".btn-trailer").mouseenter(function(){
+      $(".carousel-item img").removeClass("shadow").addClass("lightness");
+    });
 
+    $(".btn-trailer").mouseleave(function(){
+      $("#carouselHeader img").removeClass("lightness").addClass("shadow");
+    });
+  }
+  luminosite();
 
 
 });
