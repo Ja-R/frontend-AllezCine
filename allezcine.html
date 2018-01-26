@@ -451,7 +451,7 @@
 <div class="container-fluid series">
   <h2>FEATURED MOVIES</h2>
   <div class="row">
-    <div class="col-xl-10 offset-xl-1">
+    <div class="col-10 offset-1 col-sm col-xl-10 offset-xl-1">
       <div class="row">
         <button id="showAllMovies">All</button>
         <button id="showAllActionMovies">Action</button>
@@ -474,14 +474,13 @@
 <div class="container-fluid series">
     <h2>FEATURED SERIES</h2>
     <div class="row">
-      <div class="col-xl-10 offset-xl-1">
+      <div class="col-10 offset-1 col-sm col-xl-10 offset-xl-1">
         <div class="row">
           <button id="showAllSeries">All</button>
           <button id="showAllActionSeries">Action</button>
           <button id="showAllAdventureSeries">Adventure</button>
           <button id="showAllComedySeries">Comedy</button>
           <button id="showAllFantasySeries">Fantasy</button>
-          <button id="showAllHorrorSeries">Horror</button>
         </div>
         <div id="featuredSeriesContainer" class="row">
         </div>
@@ -497,65 +496,78 @@
   <div class="container-fluid shop">
     <h2>SHOP MOVIES</h2>
     <div class="row">
-      <div class="col-xl-1 offset-xl-11">
-        <span class="carousel_button" href="#carouselExampleControls" role="button" data-slide="prev"><</span>
-        <span class="carousel_button" href="#carouselExampleControls" role="button" data-slide="next">></span>
+      <div class="col-3 offset-9 col-sm-2 offset-sm-10 col-xl-1 offset-xl-11">
+        <span class="carousel_button" href="#shopCarousel" role="button" data-slide="prev"><</span>
+        <span class="carousel_button" href="#shopCarousel" role="button" data-slide="next">></span>
       </div>
     </div>
     <div class="row">
-        <div class="col-xl-5 order-12">
-            <div class="card">
-              <iframe id="trailerFrame" src="https://www.youtube.com/embed/4839KJuXfGc?rel=0&amp;controls=0" frameborder="0"></iframe>
-              <div class="card-body trailer">
-                <p id="trailerTitle" class="card-text">Les Tuches 3</p>
-                <p id="trailerYear" class="card-text">18888</p>
-              </div>
-            </div>
+      <div class="col-xl-5 order-12 trailer_frame">
+        <div class="card">
+          <iframe id="trailerFrame" src="https://www.youtube.com/embed/4839KJuXfGc?rel=0&amp;controls=0" frameborder="0"></iframe>
+          <div class="card-body trailer">
+            <p id="trailerTitle" class="card-text">Les Tuches 3</p>
+            <p id="trailerYear" class="card-text">18888</p>
           </div>
-      <div class="col-xl-7 order-1">
+        </div>
+      </div>
+      <div class="col-sm-10 offset-sm-1 col-xl-7 offset-xl-0 order-1">
         <div id="shopCarousel" class="carousel slide" data-ride="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
-                <div class="col-xl-3 shop">
+                <div class="col-6 col-md-3 col-xl-3 shop">
                   <div class="card">
                     <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Les Tuches 3')">
                     <div class="card-body">
-                      <p class="card-text title">Les Tuches 3</p>
-                      <p class="card-text year">Some<span>Some</span></p>
+                        <p class="card-text text-center m-0">Les Tuches 3</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>2018</li>
+                          <li class="font-weight-bold">Comedy</li>
+                        </ul>
+          
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3 shop">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
                     <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars I')">
                     <div class="card-body">
-                      <p class="card-text title">Star Wars I</p>
-                      <p class="card-text year">Some<span>Some</span></p>
+                        <p class="card-text text-center m-0">Star Wars I</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>1999</li>
+                          <li class="font-weight-bold">Action</li>
+                        </ul>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
                     <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars II')">
                     <div class="card-body">
-                      <p class="card-text title">Star Wars II</p>
-                      <p class="card-text year">Some<span>Some</span></p>
+                        <p class="card-text text-center m-0">Star Wars II</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>200.</li>
+                          <li class="font-weight-bold">Action</li>
+                        </ul>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
                     <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars III')">
                     <div class="card-body">
-                      <p class="card-text title">Star Wars III</p>
-                      <p class="card-text year">Some<span>Some</span></p>
+                        <p class="card-text text-center m-0">Star Wars III</p>
+                        <ul class="info-films d-flex justify-content-between">
+                          <li>20..</li>
+                          <li class="font-weight-bold">Action</li>
+                        </ul>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-xl-3">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
                     <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars IV')">
                     <div class="card-body">
@@ -564,7 +576,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
                     <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars V')">
                     <div class="card-body">
@@ -573,7 +585,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
                     <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars VI')">
                     <div class="card-body">
@@ -582,7 +594,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-6 col-md-3 col-xl-3">
                   <div class="card">
                     <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars VII')">
                     <div class="card-body">
@@ -595,7 +607,7 @@
             </div>
             <div class="carousel-item">
                 <div class="row">
-                  <div class="col-xl-3 shop">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
                       <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars VIII')">
                       <div class="card-body">
@@ -604,7 +616,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3 shop">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
                       <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Rogue One: A Star Wars Story')">
                       <div class="card-body">
@@ -613,7 +625,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
                       <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('The Matrix')">
                       <div class="card-body">
@@ -622,7 +634,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
                       <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('The Matrix Reloaded')">
                       <div class="card-body">
@@ -633,7 +645,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-xl-3">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
                       <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('The Matrix Revolutions')">
                       <div class="card-body">
@@ -642,7 +654,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
                       <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars I')">
                       <div class="card-body">
@@ -651,7 +663,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
                       <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars II')">
                       <div class="card-body">
@@ -660,7 +672,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-6 col-md-3 col-xl-3">
                     <div class="card">
                       <img class="card-img-top" src="asset/image/whatweshop.jpg" alt="Card image cap" onclick="showTrailer('Star Wars III')">
                       <div class="card-body">
@@ -675,9 +687,6 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-5">
-
-      </div>
     </div>
   </div>
 
@@ -688,37 +697,37 @@
   <div class="container-fluid contact">
     <h2>CONTACT US</h2>
     <div class="row">
-      <form id="myForm" class="col-xl-6">
+      <form class="col-lg-6 col-xl-6" onsubmit="return false">
           <div class="row">
             <div class="form-group col">
-              <input type="text" class="form-control" placeholder="First name">
+              <input id="formFirstName" type="text" class="form-control" placeholder="First name" required>
             </div>
             <div class="form-group col">
-              <input type="text" class="form-control" placeholder="Last name">
+              <input id="formLastName" type="text" class="form-control" placeholder="Last name" required>
             </div>
           </div>
           <div class="row">
             <div class="form-group col">
-                <input type="text" class="form-control" placeholder="Email">
+                <input id="formEmail" type="text" class="form-control" placeholder="Email" required>
             </div>
             <div class="form-group col">
-                <input type="text" class="form-control" placeholder="Subject">
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group col">
-              <textarea type="text" class="form-control" placeholder="YOUR MESSAGE" rows="5"></textarea>
+                <input id="formSubject" type="text" class="form-control" placeholder="Subject" required>
             </div>
           </div>
           <div class="row">
             <div class="form-group col">
-              <Button class="form_button" data-toggle="modal" data-target="#contactModal">
+              <textarea type="text" class="form-control" placeholder="YOUR MESSAGE" rows="5" required></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col">
+              <Button onclick="fillModal()" type="button" class="form_button" data-toggle="modal" data-target="#contactModal">
                 SEND YOUR MESSAGE
               </Button>
             </div>
           </div>
         </form>
-        <div class="col-xl-5">
+        <div class="col-lg-5 col-xl-5">
             <div class="container" id="map"></div>
         </div>
       </div>
@@ -728,17 +737,19 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">Your message has been sent</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <p id="modalFirstName"></p>
+          <p id="modalLastName"></p>
+          <p id="modalEmail"></p>
+          <p id="modalSubject"></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
@@ -752,7 +763,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xl">
+      <div class="col-sm-8 offset-sm-2 col-xl offset-xl-0">
       <h4>RELEASES</h4>
       <hr class="my-2">
       <ul>
@@ -764,7 +775,7 @@
         <li>2013</li>
       </ul>
       </div>
-      <div class="col-xl">
+      <div class="col-sm-8 offset-sm-2 col-xl offset-xl-0">
       <h4>MOVIES</h4>
       <hr class="my-2">
       <ul>
@@ -776,7 +787,7 @@
         <li>HORROR</li>
       </ul>
       </div>
-      <div class="col-xl">
+      <div class="col-sm-8 offset-sm-2 col-xl offset-xl-0">
       <h4>REVIEW MOVIES</h4>
       <hr class="my-2">
       <a href="#">Comedy</a>
@@ -795,30 +806,32 @@
       <a href="#">Horror</a>
       <a href="#">Historical</a>
       </div>
-      <div class="col-xl">
-      <h4>LATEST MOVIES</h4>
-      <hr class="my-2">
-      <div class="row">
-      <iframe class="col-xl-5" src="#" frameborder="0"></iframe>
-      <p class="col-xl-7">Lorem ipsum dolor</p>
+      <div class="col-sm-8 offset-sm-2 col-xl offset-xl-0">
+        <h4>LATEST MOVIES</h4>
+        <hr class="my-2">
+        <div class="row">
+        <div class="col-4 offset-4 col-sm offset-sm-0 col-xl-12 offset-xl-0">
+          <iframe src="#" frameborder="0"></iframe>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="col-4 offset-4 col-sm offset-sm-0 col-xl-12 offset-xl-0">
+          <iframe src="#" frameborder="0"></iframe>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="col-4 offset-4 col-sm offset-sm-0 col-xl-12 offset-xl-0">
+          <iframe src="#" frameborder="0"></iframe>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="col-4 offset-4 col-sm offset-sm-0 col-xl-12 offset-xl-0">
+          <iframe src="#" frameborder="0"></iframe>
+          <p>Lorem ipsum dolor</p>
+        </div>
       </div>
-      <div class="row">
-        <iframe class="col-xl-5" src="#" frameborder="0"></iframe>
-        <p class="col-xl-7">Lorem ipsum dolor</p>
       </div>
-      <div class="row">
-        <iframe class="col-xl-5" src="#" frameborder="0"></iframe>
-        <p class="col-xl-7">Lorem ipsum dolor</p>
-      </div>
-      <div class="row">
-        <iframe class="col-xl-5" src="#" frameborder="0"></iframe>
-        <p class="col-xl-7">Lorem ipsum dolor</p>
-      </div>
-      </div>
-      <div class="xl-col">
+      <div class="col-sm-8 offset-sm-2 col-xl offset-xl-0">
         <h3> <span class="rouge">ALLEZ</span>CINE!</h3>
         <hr class="my-1 allezcine">
-        <div class="container">
+        <div class="offset-sm-2 col-lg-6 offset-lg-3 col-lg-12 offset-xl-0 container">
           <div class="row allezcine">
             <img src="asset/image/batmanmini.jpg" alt="">
             <img src="asset/image/hostelmini.jpg" alt="">

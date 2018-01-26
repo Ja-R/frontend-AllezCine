@@ -277,26 +277,31 @@ footer hr{
 footer img{
   margin: 0;
   padding: 0;
+  width: 33%;
 }
 
 .card-body{
   color: #2E2E2F;
   padding: 0;
+  margin: 0;
 }
 
 .shop .col-xl-3{
-  padding-left: 5px;
-  padding-right: 5px;
   padding-bottom: 5px;
+}
+.trailer_div{
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 5;
 }
 .shop .card, .shop .card-img-top{
   border-radius: 0;
 }
-.shop .card{
-  margin-left: 15px;
-  margin-right: 0;
+
+.shop .card-body{
+  background-color: #e0e0e2;
 }
-.shop p{
+.carousel_button{
   color: #0D0D0D;
   cursor: pointer;
 }
@@ -309,6 +314,8 @@ footer img{
 .poster{
   width: 150px;
   height: 250px;
+  display: block;
+  margin: 0 auto;
 }
 
 #trailerTitle, #trailerYear{
@@ -336,5 +343,40 @@ footer img{
   color: #FE4140;
 }
 #map{
-  min-height: 400px;
+  min-height: 200px;
+}
+
+body.modal-open {
+  overflow: visible;
+}
+.trailer_frame{
+  display: none;
+}
+
+@media (min-width: 576px) { 
+  footer img{
+    width: 25%;
+  }
+}
+
+
+@media (min-width: 768px) { 
+  #map{
+    min-height: 300px;
+  }
+}
+
+
+@media (min-width: 992px) { 
+  
+}
+
+
+@media (min-width: 1200px) { 
+  #map{
+    min-height: 400px;
+  }
+  .trailer_frame{
+    display: block;
+  }
 }
