@@ -16,7 +16,7 @@ const filmsSlide = [
 
 // console.log(filmsSlide[2].director)
 
-    // changement dans modal
+
 
     var listeImgSlide = document.querySelectorAll('.imgFilm');
     var listeNomSlide = document.querySelectorAll('.nomFilm');
@@ -25,7 +25,7 @@ const filmsSlide = [
     for (i=0; i<llisteNomSlide.length && i<llisteImgSlide.length){
 
     }
-
+// changement dans modal
     function remplaceInfos(){
       $('.modalTitreFiche').text(filmsSlide[2].title);
       $('iframe #ficheTrailer').attr({
@@ -35,6 +35,7 @@ const filmsSlide = [
       $('#syno').text(filmsSlide[2].description);
     }
 
+//actions du click
     $('.modalFilm').click(function () {
       remplaceInfos()
     });
