@@ -191,7 +191,9 @@ a.arrowTop:hover{
 }
 
 
-
+.contact{
+  margin-top: 50px;
+}
 .contact h2, .shop h2, .series h2{
   color: #0D0D0D;
   padding-left: 10px;
@@ -321,9 +323,13 @@ footer img{
 .shop .card, .shop .card-img-top{
   border-radius: 0;
 }
+.shop img{
+  cursor: pointer;
+}
 
 .shop .card-body{
   background-color: #e0e0e2;
+  min-height: 70px;
 }
 .carousel_button{
   color: #0D0D0D;
