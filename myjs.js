@@ -407,3 +407,4 @@ let fillModal = function(){
     modalEmail.innerHTML = 'Email: ' + formEmail.value;
     modalSubject.innerHTML = 'Subject of your message: ' + formSubject.value;
 }
+        

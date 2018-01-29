@@ -1,32 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome</title>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JCVD</title>
     <!-- police -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/1aefb972da.js"></script>
     <!-- Boostrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <!-- custom css -->
     <link rel="stylesheet" href="style.css">
-</head>
-<body class="index">
-<div class="container col-xl-4 offset-xl-4 question_box">
-        <h2 class="question">Do you want to see a nice website?</h2>
-        <div class="row">
-            <a href="allezcine.html" class="col-xl-2 offset-xl-3"><h4>Yes</h4></a>
-            <a href="http://www.imdb.com/" class="col-xl-2 offset-xl-2"><h4>No</h4></a>
+  <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+          }, false);
+      });
+      }, false);
+  })();
+  </script>
+  </head>
+  <body>
+    <header id="banniere">
+      <div id="cookie-message">
+          <p>
+              JCVD fan page! uses cookies to ensure we give you the best experience on our website.
+              <a href="cookie-policy.html" title="View our Cookie Policy">Find out more about cookies</a>
+      </p>
+      </div>
+      <!-- jumbotron -->
+      <div class="jumbotron p-0" id="home">
+
+        <!-- navigation -->
+        <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-transparent" id="navigation">
+          <a class="navbar-brand text-white" href="#"><h1 class="display-6 mt-3 text-uppercase"> <span class="rouge">JCVD!</span></h1></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse p-0" id="navbarSupportedContent">
+            <ul class="navbar-nav mt-0">
+              <li class="nav-item active">
+                <a class="nav-link rouge" href="#" id="HomeNav">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fd-transparent text-white ml-1" href="#">Films</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fd-transparent text-white ml-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Featured movies
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Comedy</a>
+                  <a class="dropdown-item" href="#">Western</a>
+                  <a class="dropdown-item" href="#">Fiction</a>
+                  <br>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fd-transparent text-white ml-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Features series TV
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Comedy</a>
+                  <a class="dropdown-item" href="#">Western</a>
+                  <a class="dropdown-item" href="#">Fiction</a>
+                  <br>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fd-transparent text-white ml-1" href="#">Shop movies</a>
+              </li>
+              <li class="nav-item text-white ml-5">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+            <form class="input-group w-25 ml-5">
+              <input type="text" class="form-control fd-noir-transparent border-0" placeholder="Recherche" aria-label="Search" aria-describedby="basic-addon1">
+                <div class="input-group-append">
+                <span class="input-group-text fd-noir-transparent border-0" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+              </div>
+            </form>
+        </nav>
+
+        <!-- slider -->
+        <div id="carouselHeader" class="carousel slide" data-ride="carousel" data-interval="2000">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselHeader" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselHeader" data-slide-to="1"></li>
+            <li data-target="#carouselHeader" data-slide-to="2"></li>
+            <li data-target="#carouselHeader" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 shadow" src="asset/image/img jcvd/banniere/jcvd1.jpg" alt="First slide">
+              <div class="carousel-caption mb-5">
+                <h1 class="display-4 text-center text-uppercase"><span class="rouge">JCVD</span></h1>
+                <p class="lead text-center">In space no one can hear you scream.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 shadow" src="asset/image/img jcvd/banniere/jcvd3.jpg" alt="Second slide">
+              <div class="carousel-caption mb-5">
+                <h1 class="display-4 text-center text-uppercase"><span class="rouge">JCVD</span></h1>
+                <p class="lead text-center">In space someone can hear you scream.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 shadow" src="asset/image/img jcvd/banniere/jcvd5.jpg" alt="Third slide">
+              <div class="carousel-caption mb-5">
+                <h1 class="display-4 text-center text-uppercase"><span class="rouge">JCVD</span></h1>
+                <p class="lead text-center">In space no one can hear you scream.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 shadow" src="asset/image/img jcvd/banniere/jcvd6.jpg" alt="Third slide">
+              <div class="carousel-caption mb-5">
+                <h1 class="display-4 text-center text-uppercase"><span class="rouge">JCVD</span></h1>
+                <p class="lead text-center">In space no one can hear you scream.</p><span class="rouge">JCVD</span>
+              </div>
+            </div>
+          </div>
         </div>
-</div>    
+
+
+      </div> <!-- fin jumbotron -->
+    </header>
+
+
+    <!-- fleche -->
+    <a href="#banniere" class="arrowTop" id="arrow"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+<!-- fin jacqueline -->
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="presentation-tab" data-toggle="tab" href="#presentation" role="tab" aria-controls="home" aria-selected="true">Présentation</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="biographie-tab" data-toggle="tab" href="#biographie" role="tab" aria-controls="profile" aria-selected="false">Biographie</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="photographies-tab" data-toggle="tab" href="#photographies" role="tab" aria-controls="contact" aria-selected="false">Photographies</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="goodies-tab" data-toggle="tab" href="#goodies" role="tab" aria-controls="contact" aria-selected="false">Goodies</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="presentation" role="tabpanel" aria-labelledby="presentation-tab">
+    <section class="container-fluid series">
+      <h2>Présentation</h2>
+      <div class="row">
+        
+      </div>
+    </section>
+  </div>
+  <div class="tab-pane fade" id="biographie" role="tabpanel" aria-labelledby="biographie-tab">
+    <section class="container-fluid series">
+      <h2>Biographie</h2>
+      <div class="row">
+    
+      </div>
+    </section>
+  </div>
+  <div class="tab-pane fade" id="photographies" role="tabpanel" aria-labelledby="photographies-tab">
+    <section class="container-fluid series">
+      <h2>Photographies</h2>
+      <div class="row">
+    
+      </div>
+    </section>
+  </div>
+  <div class="tab-pane fade" id="goodies" role="tabpanel" aria-labelledby="goodies-tab">
+    <section class="container-fluid series">
+      <h2>Goodies</h2>
+      <div class="row">
+    
+      </div>
+    </section>
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <form class="needs-validation" novalidate>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Prénom" required>
+          <div class="invalid-feedback">
+            Prière d'entrer votre prénom.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Nom" required>
+          <div class="invalid-feedback">
+            Prière d'entrer votre nom.
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Email" required>
+          <div class="invalid-feedback">
+              Prière d'entrer votre adresse email.
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Objet" required>
+          <div class="invalid-feedback">
+              Prière d'entrer l'objet de votre message.
+            </div>
+        </div>
+      </div>
+      <div class="col-md-12 mb-3">
+        <textarea class="form-control" name="message" placeholder="Votre message..." required></textarea>
+        <div class="invalid-feedback">
+            Prière d'entrer l'objet de votre message.
+          </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Envoyer</button>
+    </form>
+  </div>
+</div>
+
+  
+
+  <footer>
+    <div class="row">
+      <div class="col-12 col-xl-6 offset-xl-3 redirect_div">
+        <h3>Envie de voir JC en action? <a href="confirmation.html">AllezCine!</a></h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-xl-10 offset-xl-1">
+        <h2>Cette Fan page approuvé par JC a été pensé, réalisé et codé par Jacqueline et Nicolas</h2>
+        <div class="jack">
+          <h3>Jacqueline</h3>
+          <p><a href="https://github.com/Ja-R"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+        </div>
+        <div class="nico">
+          <h3>Nicolas</h3>
+          <p><a href="https://github.com/nicolashacala"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 
 
 
-
-
+<script src="googlemap.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9sTQJRyinE9LapVdL_afiomfTUBJTN2g&callback=myMap"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="myjs.js"></script>
+<script type="text/javascript" src="arrowtop.js"></script>
+
+
 </body>
 </html>
