@@ -1,11 +1,15 @@
-let featuredMoviesContainer = document.getElementById('featuredMoviesContainer');
-let featuredSeriesContainer = document.getElementById('featuredSeriesContainer');
+const featuredMoviesContainer = document.getElementById('featuredMoviesContainer');
+const featuredSeriesContainer = document.getElementById('featuredSeriesContainer');
 let moviesContainerChildren = featuredMoviesContainer.childNodes;
 let seriesContainerChildren = featuredSeriesContainer.childNodes;
 let showMovies = document.getElementById('showMoreOrLessMovies');
 let showSeries = document.getElementById('showMoreOrLessSeries');
 let allMoviesDisplayed = false;
 let allSeriesDisplayed = false;
+let moviesButtonsRow = document.getElementById('moviesButtonsRow');
+let moviesButtonsRowChildren = moviesButtonsRow.childNodes;
+let seriesButtonsRow = document.getElementById('seriesButtonsRow');
+let seriesButtonsRowChildren = seriesButtonsRow.childNodes;
 
 // Detect JS support
 document.body.className = document.body.className + " js_enabled";
@@ -147,7 +151,7 @@ let displayFeatured = function (container, data, bool, button){
 
         
         let wrap = document.createElement('DIV');
-        wrap.className = 'col-8 offset-2 col-sm-4 offset-sm-1 col-md-3 offset-md-0 col-lg-2 col-xl-2 offset-xl-0 feat_wrap';
+        wrap.className = 'col-8 offset-2 col-sm-4 offset-sm-1 col-md-3 offset-md-0 col-lg-2 col-xl-2 feat_wrap';
         wrap.appendChild(poster);
         wrap.appendChild(description);
         
@@ -156,6 +160,22 @@ let displayFeatured = function (container, data, bool, button){
         }
 
         container.appendChild(wrap);
+    }
+    if(container == featuredMoviesContainer){
+        for(let i=0; i<moviesButtonsRowChildren.length; i++){
+            if(moviesButtonsRowChildren[i] !== '#text'){
+                moviesButtonsRowChildren[i].className = 'genre_button';
+            }
+        }
+        showAllMovies.className += ' active';
+    }
+    else if(container == featuredSeriesContainer){
+        for(let i=0; i<seriesButtonsRowChildren.length; i++){
+            if(seriesButtonsRowChildren[i] !== '#text'){
+                seriesButtonsRowChildren[i].className = 'genre_button';
+            }
+        }
+        showAllSeries.className += ' active';
     }
 }
 let showAllMovies = document.getElementById('showAllMovies');
@@ -236,11 +256,64 @@ let genreFilter = function(filter, container, data, button){
             description.appendChild(descriptionList);
             
             let wrap = document.createElement('DIV');
-            wrap.className = 'col-8 offset-2 col-sm-4 offset-sm-1 col-md-3 offset-md-0 col-lg-2 col-xl-2 offset-xl-0 feat_wrap';
+            wrap.className = 'col-8 offset-2 col-sm-4 offset-sm-1 col-md-3 offset-md-0 col-lg-2 col-xl-2 feat_wrap';
             wrap.appendChild(poster);
             wrap.appendChild(description);
 
         container.appendChild(wrap);
+        }
+    }
+    if(container == featuredMoviesContainer){
+        for(let i=0; i<moviesButtonsRowChildren.length; i++){
+            if(moviesButtonsRowChildren[i] !== '#text'){
+                moviesButtonsRowChildren[i].className = 'genre_button';
+            }
+        }
+        switch (filter) {
+            case 'Action' :
+                showAllActionMovies.className += ' active'
+                break;
+            case 'Adventure':
+                showAllAdventureMovies.className += ' active'
+                break;
+            case 'Comedy':
+                showAllComedyMovies.className += ' active'
+                break;
+            case 'Fantasy':
+                showAllFantasyMovies.className += ' active'
+                break;
+            case 'Horror':
+                showAllHorrorMovies.className += ' active'
+                break;
+        
+            default:
+                showAllMovies.className += ' active'
+                break;
+        }
+    }
+    else if(container == featuredSeriesContainer){
+        for(let i=0; i<seriesButtonsRowChildren.length; i++){
+            if(seriesButtonsRowChildren[i] !== '#text'){
+                seriesButtonsRowChildren[i].className = 'genre_button';
+            }
+        }
+        switch (filter) {
+            case 'Action' :
+                showAllActionSeries.className += ' active'
+                break;
+            case 'Adventure':
+                showAllAdventureSeries.className += ' active'
+                break;
+            case 'Comedy':
+                showAllComedySeries.className += ' active'
+                break;
+            case 'Fantasy':
+                showAllFantasySeries.className += ' active'
+                break;
+        
+            default:
+                showAllSeries.className += ' active'
+                break;
         }
     }
 
@@ -307,7 +380,7 @@ const trailerFrame = document.getElementById('trailerFrame');
 const trailerTitle = document.getElementById('trailerTitle');
 const trailerYear = document.getElementById('trailerYear');
 
-trailerFrame.src = 'https://www.youtube.com/embed/4839KJuXfGc?rel=0&amp;controls=0';
+trailerFrame.src;
 
 let showTrailer = function(title){
     for(let i=0; i<trailersList.length; i++){

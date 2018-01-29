@@ -1,6 +1,6 @@
 function myMap() {
     var locations = [
-        ['AllezCine! Head Quarters', 50.845362, 4.357290]
+        ['AllezCine! Head Quarters<br/>Rue AllezCine!<br/>1000 Bruxelles', 50.845362, 4.357290]
     ];
 
     var map = new google.maps.Map(document.getElementById('map'), {

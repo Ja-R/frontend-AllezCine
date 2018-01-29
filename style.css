@@ -166,9 +166,34 @@ a.arrowTop:hover{
   padding: 10px 13px;
 }
 
+.genre_button{
+  background-color: #d4d4d4;
+  color: #0D0D0D;
+  border: none;
+  margin: 10px 1px;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+.genre_button.active{
+  color: #FFF;
+  background-color: #FE4140;
+}
+.show_more_less{
+  background-color: #FE4140;
+  color: #FFF;
+  font-weight: bold;
+  border: none;
+  margin: 10px auto;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+}
 
 
-
+.contact{
+  margin-top: 50px;
+}
 .contact h2, .shop h2, .series h2{
   color: #0D0D0D;
   padding-left: 10px;
@@ -260,6 +285,7 @@ footer iframe{
   height: 60px;
   background-color: grey;
   margin-bottom: 15px;
+  margin-right: 5px;
 }
 
 footer a, footer a:hover, footer a:visited{
@@ -297,9 +323,13 @@ footer img{
 .shop .card, .shop .card-img-top{
   border-radius: 0;
 }
+.shop img{
+  cursor: pointer;
+}
 
 .shop .card-body{
   background-color: #e0e0e2;
+  min-height: 70px;
 }
 .carousel_button{
   color: #0D0D0D;
@@ -378,5 +408,8 @@ body.modal-open {
   }
   .trailer_frame{
     display: block;
+  }
+  footer img{
+    width: 33%;
   }
 }
