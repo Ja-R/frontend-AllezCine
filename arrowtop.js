@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   // stop
   function pauseCarousel(){
-    $(".modalFilms").click(function(){
+    $(".modalFilm").click(function(){
       $("#carouselFilms").carousel("pause");
     });
     // restart
