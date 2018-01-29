@@ -271,6 +271,12 @@ footer ul{
   padding: 5px;
   border: none;
 }
+.subscribe input[type="submit"]{
+  border: none;
+  padding: 5px;
+  background-color: #FE423E;
+  color: #FFF;
+}
 
 .form_button{
   border: none;
