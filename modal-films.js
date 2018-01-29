@@ -1,8 +1,21 @@
-$(document).ready(function(){
+// carousel et modal !
 
+// stop
+function pauseCarousel(){
+  $(".modalFilm").click(function(){
+    $("#carouselFilms").carousel("pause");
+  });
+  // restart
+  $(".modal .btn").click(function(){
+    $("#carouselFilms").carousel("cycle");
+  });
+}
+pauseCarousel()
+
+// modal
 
 const filmsSlide = [
-    {title: 'Pentagon Papers', director: 'Steven Spielberg', genre: 'Drame, Historique, Biopic', year: 2017, casting: 'Tom Hanks et Meryl Streep', trailor: 'https://www.youtube.com/embed/whFAsePy-w8', description: 'Première femme directrice de la publication d\'un grand journal américain, The Washington Post, Katharine Graham s\'associe à son rédacteur en chef Ben Bradlee pour dévoiler un scandale d\’État monumental et combler son retard par rapport au New York Times qui mène ses propres investigations...'},
+    {title: 'Pentagon Papers', director: 'Steven Spielberg', genre: 'Drame, Historique, Biopic', year: 2017, casting: 'Tom Hanks et Meryl Streep', trailer: 'https://www.youtube.com/embed/whFAsePy-w8', description: 'Première femme directrice de la publication d\'un grand journal américain, The Washington Post, Katharine Graham s\'associe à son rédacteur en chef Ben Bradlee pour dévoiler un scandale d\’État monumental et combler son retard par rapport au New York Times qui mène ses propres investigations...'},
     {title: 'The Greatest Showman', director: 'Michael Gracey', genre: 'biopic, comedie dramatique, musique', year: 2018, casting: 'Hugh Jackman, Rebecca Ferguson, Zac Efron, Michelle Williams et Zendaya', trailer: 'https://www.youtube.com/embed/AXCTMGYUg9A', description: 'Découvrez l\’histoire de P.T Barnum, un visionnaire parti de rien pour créer un spectacle devenu un phénomène planétaire...'},
     {title: 'La Douleur', director: 'Emmanuel Finkiel', genre: 'drame', year: 2018 ,casting: 'Mélanie Thierry et Benoit Magimel', trailer: 'https://www.youtube.com/embed/J6-Y_kErP4s', description: 'Juin 1944, la France est toujours sous l\’Occupation allemande. L\’écrivain Robert Antelme, figure majeure de la Résistance, est arrêté et déporté...'},
     {title: 'Fortunata', director: 'Sergio Castellitto', genre: 'drame', year: 2018, casting: 'Jasmine Trinca', trailer: 'https://www.youtube.com/embed/9V58R_y96SM', description: 'Fortunata a une vie tourmentée, une fille de huit ans et un mariage raté derrière elle...'},
@@ -14,31 +27,19 @@ const filmsSlide = [
     {title: 'Marie Curie', director: 'Marie-Noëlle Sehr', genre: 'biopic', year: 2018, casting: 'Karolina Gruszka et Charles Berling', trailer: 'https://www.youtube.com/embed/h0iEV7a63-Q', description: 'Physicienne chimiste d\'origine polonaise, Marie Curie est une pionnière dans l\'étude de la radioactivité...'},
 ];
 
-// console.log(filmsSlide[2].director)
+    const titre = document.getElementById('ficheTitre');
+    const ba = document.getElementById('ficheTrailer');
+    const infoFilm = document.getElementById('ficheInfo');
+    const synopsis = document.getElementById('syno');
 
-
-
-    var listeImgSlide = document.querySelectorAll('.imgFilm');
-    var listeNomSlide = document.querySelectorAll('.nomFilm');
-    // console.log(listeImgSlide[9]);
-    // console.log(listeNomSlide.length);
-    for (i=0; i<llisteNomSlide.length && i<llisteImgSlide.length){
-
+    // recherche du film selectionnes
+    let selectTrailer = function(title){
+        for(let i=0; i<filmsSlide.length; i++){
+            if(title == filmsSlide[i].title){
+              titre.innerHTML = title;
+              ba.src = filmsSlide[i].trailer;
+              infoFilm.innerHTML = filmsSlide[i].director + ", " + filmsSlide[i].genre + ", " + filmsSlide[i].year + ", avec " + filmsSlide[i].casting;
+              synopsis.innerHTML = filmsSlide[i].description;
+            }
+        }
     }
-// changement dans modal
-    function remplaceInfos(){
-      $('.modalTitreFiche').text(filmsSlide[2].title);
-      $('iframe #ficheTrailer').attr({
-        src: 'filmsSlide[2].trailer'
-      });
-      $('#ficheInfo').text(filmsSlide[2].director + ", " + filmsSlide[2].genre + ", " + filmsSlide[2].year + ", avec " + filmsSlide[2].casting);
-      $('#syno').text(filmsSlide[2].description);
-    }
-
-//actions du click
-    $('.modalFilm').click(function () {
-      remplaceInfos()
-    });
-
-
-});
