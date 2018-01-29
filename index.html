@@ -195,10 +195,58 @@
     <section class="container-fluid series">
       <h2>Goodies</h2>
       <div class="row">
-    
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="asset/image/img jcvd/noisettesmini.jpeg" alt="noisettes ouvertes par JC">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">200g de noisettes ouvertes par les fesses de JC</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  Voir les détails
+                </button>
+              </div>
+            </div>
       </div>
     </section>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">200g de noisettes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <img class="card-img-top" src="asset/image/img jcvd/noisettes.jpeg" alt="noisettes ouvertes par JC">
+        <div class="modal-body">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="presentation-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">Détails</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="biographie-tab" data-toggle="tab" href="#achat" role="tab" aria-controls="achat" aria-selected="false">Achat</a>
+            </li>
+          </ul>
+          <div class="tab-pane fade show active" id="details" role="tabpanel" aria-labelledby="details-tab">
+            <p>Voici les fameuses noisettes cassés par JC! Elles ont ensuite été cuîte au feu de bois et salé au sel fin de Guérande.</p>
+            <em>Dû à la quantité de noisettes cassés, les noisettes sont enveloppées de soie pendant le processus d'ouverture. Pour des noisettes ouvertes en contact directe avec les fesses de JC, veuillez contacter notre service client au 0800 JCVD</em>
+          </div>
+          <div class="tab-pane fade" id="achat" role="tabpanel" aria-labelledby="achat-tab">
+            <p>10 euros/200g</p>
+            <p>Quantité souhaitée:</p>
+            <input type="number" class="form-control" min="1" value="0">
+            <p id="total">Total: 20 euros</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
   </div>
+  </div>
+
   <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
     <form class="needs-validation" novalidate>
       <div class="form-row">
@@ -229,7 +277,7 @@
             </div>
         </div>
       </div>
-      <div class="col-md-12 mb-3">
+      <div class="col mb-3">
         <textarea class="form-control" name="message" placeholder="Votre message..." required></textarea>
         <div class="invalid-feedback">
             Prière d'entrer l'objet de votre message.
@@ -250,7 +298,7 @@
     </div>
     <div class="row">
       <div class="col-12 col-xl-10 offset-xl-1">
-        <h2>Cette Fan page approuvé par JC a été pensé, réalisé et codé par Jacqueline et Nicolas</h2>
+        <h2>Cette Fan page, approuvé par JC, a été pensé, réalisé et codé par Jacqueline et Nicolas</h2>
         <div class="jack">
           <h3>Jacqueline</h3>
           <p><a href="https://github.com/Ja-R"><i class="fa fa-github" aria-hidden="true"></i></a></p>
@@ -266,12 +314,10 @@
 
 
 
-<script src="googlemap.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9sTQJRyinE9LapVdL_afiomfTUBJTN2g&callback=myMap"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="myjs.js"></script>
+<script src="jcvd.js"></script>
 <script type="text/javascript" src="arrowtop.js"></script>
 
 
