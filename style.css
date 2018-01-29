@@ -9,6 +9,10 @@ body{
   color: #FE423E !important;
 }
 
+.bleu{
+  color: #6d9dc5 !important;
+}
+
 .jumbotron{
   position: relative !important;
 }
@@ -190,6 +194,23 @@ a.arrowTop:hover{
   cursor: pointer;
 }
 
+/*Page JCVD*/
+
+/*#carouselHeaderJcvd.carousel-indicators li {
+    background-color: white !important;
+}
+
+#carouselHeaderJcvd.carousel-indicators li.active {
+    background-color: #FE423E !important;
+}*/
+
+/*gallerie photos*/
+img#photosSlide{
+  width: 40%;
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .contact{
   margin-top: 50px;
@@ -389,26 +410,26 @@ body.modal-open {
   display: none;
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   footer img{
     width: 25%;
   }
 }
 
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   #map{
     min-height: 300px;
   }
 }
 
 
-@media (min-width: 992px) { 
-  
+@media (min-width: 992px) {
+
 }
 
 
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   #map{
     min-height: 400px;
   }
