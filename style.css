@@ -1,16 +1,13 @@
 body{
   font-family: 'Lato', sans-serif;
 }
+
 .js_enabled #cookie-message {
   display: none;
 }
 
 .rouge{
   color: #FE423E !important;
-}
-
-.bleu{
-  color: #6d9dc5 !important;
 }
 
 .jumbotron{
@@ -192,24 +189,6 @@ a.arrowTop:hover{
   width: 120px;
   height: 50px;
   cursor: pointer;
-}
-
-/*Page JCVD*/
-
-/*#carouselHeaderJcvd.carousel-indicators li {
-    background-color: white !important;
-}
-
-#carouselHeaderJcvd.carousel-indicators li.active {
-    background-color: #FE423E !important;
-}*/
-
-/*gallerie photos*/
-img#photosSlide{
-  width: 40%;
-  height: 40%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contact{
