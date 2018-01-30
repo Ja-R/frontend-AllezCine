@@ -1,13 +1,14 @@
 # frontend-AllezCine
 
 
-### [consignes](https://github.com/becodeorg/Swartz-promo-3/tree/master/Projects/FrontEnd-AllezCine)  #
+### [Consignes](https://github.com/becodeorg/Swartz-promo-3/tree/master/Projects/FrontEnd-AllezCine) : #
 
 Réalisation de deux sites et une newsletter sur deux semaines en binôme.
-collaborateurs: Nicolas H. et Jacqueline R.
+
+Collaborateurs: Nicolas H. et Jacqueline R.
 
 
-### Sources #
+### Sources : #
 
 Page Allez Cine: [Gallerie films](www.commeaucinema.com)
 

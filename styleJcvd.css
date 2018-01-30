@@ -5,20 +5,25 @@ body{
   display: none;
 }
 
-.bleu{
+/*.bleu{
   color: #6d9dc5 !important;
-}
+}*/
 
 .carousel-indicators li {
     background-color: white !important;
 }
 
 .carousel-indicators li.active {
-    background-color: #6d9dc5 !important;
+    background-color: black !important;
 }
 
 .fd-noir-transparent{
   background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/*biographie*/
+.cache{
+  display: none;
 }
 
 /*gallerie photos*/
@@ -27,26 +32,26 @@ img#photosSlide{
   height: 40%;
   margin-left: auto;
   margin-right: auto;
-  border: 4px solid red;
+  margin-bottom: 5px;
+}
+
+#infoPicture{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
 }
 
 #thumbs{
-  /*border: 4px solid purple;*/
   display: flex;
   justify-content: center;
 }
 
-.thumbnail{
-  /*border: 2px solid hotPink;*/
-}
-
 .thumbnail {
-    margin: 3px;
-    /*border: 1px solid hotPink;*/
+    margin: 10px;
     width: 180px;
     height: 100px;
 }
 
 .thumbnail:hover {
-    /*border: 1px solid yellow;*/
+    margin-top:1px;
 }

@@ -13,10 +13,12 @@ var imgJcvd=[
 var time = 2000;
 
 var slidePhoto = document.getElementById('photosSlide');
+var info = document.getElementById('infoPicture');
 
 // slide auto
 function changeImg(){
   slidePhoto.src=imgJcvd[i].picture;
+  info.innerHTML=imgJcvd[i].title + ", " + imgJcvd[i].year;
   if(i<imgJcvd.length-1){
       i++
       }else {
@@ -27,13 +29,14 @@ function changeImg(){
 
 // choix du visiteur
 let selectPicture = function(title){
-    for(let i=0; i<imgJcvd.length; i++){
-        if(title == imgJcvd[i].title){
-          slidePhoto.src=imgJcvd[i].picture;
+    for(let x=0; x<imgJcvd.length; x++){
+        if(title == imgJcvd[x].title){
+          slidePhoto.src=imgJcvd[x].picture;
+          info.innerHTML=imgJcvd[x].title + ", " + imgJcvd[x].year;
+          i = x;
         }
     }
 }
-
 
 $('#photographies-tab').on('click', function(){
   changeImg();
