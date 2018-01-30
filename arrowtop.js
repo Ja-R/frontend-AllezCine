@@ -1,4 +1,4 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
   // fleche vers le haut
   var banniere = document.getElementById('banniere');
@@ -16,20 +16,6 @@ $(document).ready(function(){
     }
   })
 
-  // carousel et modal !
-
-  // stop
-  function pauseCarousel(){
-    $(".modalFilms").click(function(){
-      $("#carouselFilms").carousel("pause");
-    });
-    // restart
-    $(".modal .btn").click(function(){
-      $("#carouselFilms").carousel("cycle");
-    });
-  }
-  pauseCarousel()
-
 
   // shadow
   function luminosite(){
@@ -44,4 +30,4 @@ $(document).ready(function(){
   luminosite();
 
 
-});
+// });
