@@ -1,35 +1,63 @@
 body{
   font-family: 'Lato', sans-serif;
+  background-color: #0D0D0D;
+  color: white;
 }
 .js_enabled #cookie-message {
   display: none;
 }
 
-/*.bleu{
-  color: #6d9dc5 !important;
-}*/
+.dore{
+  color: #BC994E !important;
+}
 
 .carousel-indicators li {
     background-color: white !important;
 }
 
 .carousel-indicators li.active {
-    background-color: black !important;
+    background-color: #BC994E !important;
 }
 
 .fd-noir-transparent{
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-/*biographie*/
-.cache{
-  display: none;
+/*onglets principaux*/
+#myTab{
+  border-color:  #BC994E !important;
 }
+
+a.nav-link.active{
+  color: #BC994E !important;
+}
+
+/*presentation*/
+#presentation{
+margin-top: 30px;
+}
+
+#v-pills-tabContent{
+  margin-left: 100px ;
+}
+
+/*biographie*/
+button.btn-link:focus{
+  text-decoration: none;
+  color: #BC994E !important
+}
+
+button.btn-link:hover{
+  text-decoration: none;
+  color: #BC994E !important
+}
+
 
 /*gallerie photos*/
 img#photosSlide{
   width: 40%;
   height: 40%;
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
@@ -57,7 +85,7 @@ img#photosSlide{
 }
 
 footer{
-  background-color: #0D0D0D;
+  background-color: black;
   padding-top: 20px;
   margin-top: 15px;
   font-size: 0.75em;
