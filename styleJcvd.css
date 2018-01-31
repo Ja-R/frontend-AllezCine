@@ -86,14 +86,3 @@ footer a, footer a:hover, footer a:visited{
   padding: 2px 10px;
   margin: 5px 0;
 }
-
-.nav a, .nav a:hover, .nav a:visited{
-  text-decoration: none;
-  color: #0D0D0D;
-  padding: 15px;
-}
-.nav-tabs .nav-link{
-  border-left: 1px solid #0D0D0D;
-  border-top: 1px solid #0D0D0D;
-  border-right: 1px solid #0D0D0D;
-}
