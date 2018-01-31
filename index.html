@@ -252,7 +252,6 @@
 
   <div class="tab-pane fade" id="goodies" role="tabpanel" aria-labelledby="goodies-tab">
     <section class="container-fluid mt-4">
-      <h2>Goodies</h2>
       <div class="row">
         <div class="container col-xl-10 offset-xl-1">
           <div class="row">
@@ -324,10 +323,10 @@
           <div class="col-xl-6">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">Détails</a>
+              <a class="nav-link active bg-transparent text-white border-0" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">Détails</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="achat-tab" data-toggle="tab" href="#achat" role="tab" aria-controls="achat" aria-selected="false">Achat</a>
+              <a class="nav-link bg-transparent text-white border-0" id="achat-tab" data-toggle="tab" href="#achat" role="tab" aria-controls="achat" aria-selected="false">Achat</a>
             </li>
           </ul>
           <div class="tab-content">
@@ -349,8 +348,8 @@
       </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-link text-white" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-link text-white">Commander</button>
         </div>
       </div>
     </div>
@@ -358,7 +357,6 @@
 
   <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
     <form class="needs-validation col-xl-10 offset-xl-1 mt-4" novalidate>
-      <h2>Contact Us</h2>
       <div class="form-row">
         <div class="col-md-6 mb-3">
           <input type="text" class="form-control" placeholder="Prénom" required>
@@ -393,30 +391,23 @@
             Prière d'entrer l'objet de votre message.
           </div>
       </div>
-      <button class="btn btn-primary" type="submit">Envoyer</button>
+      <button class="btn btn-link text-white" type="submit">Envoyer</button>
     </form>
   </div>
 </div>
 
 
 
-  <footer>
+  <footer class="container-fluid">
     <div class="row">
       <div class="col-12 col-xl-6 offset-xl-3 redirect_div">
-        <h3>Envie de voir JC en action? <a href="confirmation.html">AllezCine!</a></h3>
+        <h2>Envie de voir JC en action?</h2>
+        <a class="allezcine" href="confirmation.html">AllezCine!</a>
       </div>
     </div>
     <div class="row">
       <div class="col-12 col-xl-10 offset-xl-1">
-        <h2>Cette Fan page, approuvé par JC, a été pensé, réalisé et codé par Jacqueline et Nicolas</h2>
-        <div class="jack">
-          <h3>Jacqueline</h3>
-          <p><a href="https://github.com/Ja-R"><i class="fa fa-github" aria-hidden="true"></i></a></p>
-        </div>
-        <div class="nico">
-          <h3>Nicolas</h3>
-          <p><a href="https://github.com/nicolashacala"><i class="fa fa-github" aria-hidden="true"></i></a></p>
-        </div>
+        <h3>Cette Fan page, approuvé par JC, a été pensé, réalisé et codé par <a href="https://github.com/Ja-R">Jacqueline</a> et <a href="https://github.com/nicolashacala">Nicolas</a></h3>
       </div>
     </div>
 
@@ -430,5 +421,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="photosJcvd.js"></script>
 <script src="jcvd.js"></script>
+<script src="cookies.js"></script>
 </body>
 </html>
