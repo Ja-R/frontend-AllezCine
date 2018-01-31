@@ -128,13 +128,14 @@ ul.onglet{
 .bande-films{
   margin-top: 30px;
   margin-bottom: 30px;
-  padding-left: 110px; /*bidouillages*/
+  /*padding-left: 110px; */
 }
 
-/*.films{
+.films{
   width: 150px;
   height: 250px;
-}*/
+}
+
 
 ul.info-films{
   list-style-type: none;
@@ -417,5 +418,32 @@ body.modal-open {
   }
   footer img{
     width: 33%;
+  }
+}
+
+/*responsive top*/
+@media(min-width:1200px){
+  .bande-films{
+    padding-left: 110px;
+  }
+}
+
+@media (max-width: 576px) {
+  #navigation{
+    background-color: black !important;
+    /*height: 30%;*/
+  }
+
+  #carouselHeader.carousel{
+    display: none;
+  }
+
+  .sub-jumb{
+    display: block !important;
+  }
+
+
+  #reseaux{
+    top: 350px;
   }
 }

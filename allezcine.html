@@ -26,8 +26,8 @@
         <!-- navigation -->
         <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-transparent" id="navigation">
           <a class="navbar-brand text-white" href="#"><h1 class="display-6 mt-3 text-uppercase"> <span class="rouge">Allez</span>Cine!</h1></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-dark"></span>
           </button>
 
           <div class="collapse navbar-collapse p-0" id="navbarSupportedContent">
@@ -195,8 +195,8 @@
                     <input type="text" class="form-control" id="username" placeholder="Username">
                   </div>
                   <div class="form-group mx-sm-3 mb-2">
-                    <label for="input" class="sr-only">Surname</label>
-                    <input type="text" class="form-control" id="SurName" placeholder="Surname">
+                    <label for="input" class="sr-only">Name</label>
+                    <input type="text" class="form-control" id="SurName" placeholder="Name">
                   </div>
                   <div class="form-group mx-sm-3 mb-2">
                     <label for="inputEmail" class="sr-only">Email</label>
@@ -260,22 +260,21 @@
     <!-- slider films -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xl-10 offset-xl-1">
-
+        <div class="col-sm col-xl-10 offset-xl-1">
           <div id="carouselFilms" class="carousel slide" data-ride="carousel" data-interval="10000">
             <div class="carousel-inner border">
 
               <div class="carousel-item bande-films active">
                 <div class="row">
                   <!-- 1 -->
-                  <div class="col-xl-2">
-                    <div class="card border-0">
+                  <div class="col-6 offset-3 col-md-2 mx-md-2 col-xl-2">
+                    <div class="card border-0 cardFilm">
                       <a class="modalFilm imgFilm" data-toggle="modal" data-target="#filmFiche" onclick="selectTrailer('Pentagon Papers')">
-                        <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v1.png" alt="Card">
+                        <img class="films card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v1.png" alt="Card">
                       </a>
-                      <div class="card-body">
+                      <div class="card-body text-center">
                         <a class="modalFilm nomFilm" data-toggle="modal" data-target="#filmFiche">
-                          <p class="card-text text-center m-0">Pentagon Papers</p>
+                          <span class="card-text m-0">Pentagon Papers</span>
                         </a>
                         <ul class="info-films d-flex justify-content-between">
                           <li>2017</li>
@@ -286,14 +285,14 @@
                   </div>
 
                   <!-- 2 -->
-                  <div class="col-xl-2">
-                    <div class="card border-0">
+                  <div class="col-6 offset-3 col-md-2 mx-md-2 col-xl-2">
+                    <div class="card border-0 cardFilm">
                       <a class="modalFilm imgFilm" data-toggle="modal" data-target="#filmFiche" onclick="selectTrailer('The Greatest Showman')">
-                        <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v2.png" alt="Card">
+                        <img class="films card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v2.png" alt="Card">
                       </a>
-                      <div class="card-body">
+                      <div class="card-body text-center">
                         <a class="modalFilm nomFilm" data-toggle="modal" data-target="#filmFiche">
-                          <p class="card-text text-center m-0">The Greatest Showman</p>
+                          <span class="card-text m-0">The Greatest Showman</span>
                         </a>
                         <ul class="info-films d-flex justify-content-between">
                           <li>2018</li>
@@ -303,14 +302,14 @@
                     </div>
                   </div>
                   <!-- 3 -->
-                  <div class="col-xl-2">
-                    <div class="card border-0">
+                  <div class="col-6 offset-3 col-md-2 mx-md-2 col-xl-2">
+                    <div class="card border-0 cardFilm">
                       <a class="modalFilm imgFilm" data-toggle="modal" data-target="#filmFiche" onclick="selectTrailer('La Douleur')">
-                        <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v3.png" alt="Card image cap">
+                        <img class="films card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v3.png" alt="Card image cap">
                       </a>
-                      <div class="card-body">
+                      <div class="card-body text-center">
                         <a class="modalFilm nomFilm" data-toggle="modal" data-target="#filmFiche">
-                          <p class="card-text text-center m-0">La Douleur</p>
+                          <span class="card-text text-center m-0">La Douleur</span>
                         </a>
                         <ul class="info-films d-flex justify-content-between">
                           <li>2018</li>
@@ -320,14 +319,14 @@
                     </div>
                   </div>
                   <!-- 4 -->
-                  <div class="col-xl-2">
-                    <div class="card border-0">
+                  <div class="col-6 offset-3 col-md-2 mx-md-2 col-xl-2">
+                    <div class="card border-0 cardFilm">
                       <a class="modalFilm imgFilm" data-toggle="modal" data-target="#filmFiche" onclick="selectTrailer('Fortunata')">
-                        <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v4.png" alt="Card image cap">
+                        <img class="films card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v4.png" alt="Card image cap">
                       </a>
-                      <div class="card-body">
+                      <div class="card-body text-center">
                       <a class="modalFilm nomFilm" data-toggle="modal" data-target="#filmFiche">
-                        <p class="card-text text-center m-0">Fortunata</p>
+                        <span class="films card-text text-center m-0">Fortunata</span>
                       </a>
                         <ul class="info-films d-flex justify-content-between">
                           <li>2018</li>
@@ -337,14 +336,14 @@
                     </div>
                   </div>
                   <!-- 5 -->
-                  <div class="col-xl-2">
-                    <div class="card border-0">
+                  <div class="col-6 offset-3 col-md-2 mx-md-2 col-xl-2">
+                    <div class="card border-0 cardFilm">
                       <a class="modalFilm imgFilm" data-toggle="modal" data-target="#filmFiche" onclick="selectTrailer('Veranica')">
-                        <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v5.png" alt="Card image cap">
+                        <img class="films card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v5.png" alt="Card image cap">
                       </a>
-                      <div class="card-body">
+                      <div class="card-body  text-center">
                         <a class="modalFilm nomFilm" data-toggle="modal" data-target="#filmFiche">
-                          <p class="card-text text-center m-0">Veranica</p>
+                          <span class="card-text text-center m-0">Veranica</span>
                         </a>
                         <ul class="info-films d-flex justify-content-between">
                           <li>2018</li>
@@ -359,14 +358,14 @@
               <div class="carousel-item bande-films">
                 <div class="row">
                   <!-- 6 -->
-                  <div class="col-xl-2">
-                    <div class="card border-0">
+                  <div class="col-6 offset-3 col-md-2 mx-md-2 col-xl-2">
+                    <div class="card border-0 cardFilm">
                       <a class="modalFilm imgFilm" data-toggle="modal" data-target="#filmFiche" onclick="selectTrailer('The Passenger')">
-                        <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v6.png" alt="Card">
+                        <img class="films card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v6.png" alt="Card">
                       </a>
-                      <div class="card-body">
+                      <div class="card-body text-center">
                         <a class="modalFilm nomFilm" data-toggle="modal" data-target="#filmFiche">
-                          <p class="card-text text-center m-0">The Passenger</p>
+                          <span class="card-text text-center m-0">The Passenger</span>
                         </a>
                         <ul class="info-films d-flex justify-content-between">
                           <li>2018</li>
@@ -376,14 +375,14 @@
                     </div>
                   </div>
                   <!-- 7 -->
-                  <div class="col-xl-2">
-                    <div class="card border-0">
+                  <div class="col-6 offset-3 col-md-2 mx-md-2 col-xl-2">
+                    <div class="card border-0 cardFilm">
                       <a class="modalFilm imgFilm" data-toggle="modal" data-target="#filmFiche" onclick="selectTrailer('Handia')">
-                        <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v7.png" alt="Card">
+                        <img class="films card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v7.png" alt="Card">
                       </a>
-                      <div class="card-body">
+                      <div class="card-body  text-center">
                         <a class="modalFilm nomFilm" data-toggle="modal" data-target="#filmFiche">
-                          <p class="card-text text-center m-0">Handia</p>
+                          <span class="card-text text-center m-0">Handia</span>
                         </a>
                         <ul class="info-films d-flex justify-content-between">
                           <li>2018</li>
@@ -393,14 +392,14 @@
                     </div>
                   </div>
                   <!-- 8 -->
-                  <div class="col-xl-2">
-                    <div class="card border-0">
+                  <div class="col-6 offset-3 col-md-2 mx-md-2 col-xl-2">
+                    <div class="card border-0 cardFilm">
                       <a class="modalFilm imgFilm" data-toggle="modal" data-target="#filmFiche" onclick="selectTrailer('Jean Douchet')">
-                        <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v8.png" alt="Card image cap">
+                        <img class="films card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v8.png" alt="Card image cap">
                       </a>
-                      <div class="card-body">
+                      <div class="card-body text-center">
                         <a class="modalFilm nomFilm" data-toggle="modal" data-target="#filmFiche">
-                          <p class="card-text text-center m-0">Jean Douchet</p>
+                          <span class="card-text text-center m-0">Jean Douchet</span>
                         </a>
                         <ul class="info-films d-flex justify-content-between">
                           <li>2018</li>
@@ -410,14 +409,14 @@
                     </div>
                   </div>
                   <!-- 9 -->
-                  <div class="col-xl-2">
-                    <div class="card border-0">
+                  <div class="col-6 offset-3 col-md-2 mx-md-2 col-xl-2">
+                    <div class="card border-0 cardFilm">
                       <a class="modalFilm imgFilm" data-toggle="modal" data-target="#filmFiche" onclick="selectTrailer('Hannah')">
-                        <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v9.png" alt="Card image cap">
+                        <img class="films card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v9.png" alt="Card image cap">
                       </a>
-                      <div class="card-body">
+                      <div class="card-body text-center">
                         <a class="modalFilm nomFilm" data-toggle="modal" data-target="#filmFiche">
-                          <p class="card-text text-center m-0">Hannah</p>
+                          <span class="card-text text-center m-0">Hannah</span>
                         </a>
                         <ul class="info-films d-flex justify-content-between">
                           <li>2017</li>
@@ -427,14 +426,14 @@
                     </div>
                   </div>
                   <!-- 10 -->
-                  <div class="col-xl-2">
-                    <div class="card border-0">
+                  <div class="col-6 offset-3 col-md-2 mx-md-2 col-xl-2">
+                    <div class="card border-0 cardFilm">
                       <a class="modalFilm imgFilm" data-toggle="modal" data-target="#filmFiche" onclick="selectTrailer('Marie Curie')">
-                        <img class="card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v10.png" alt="Card image cap">
+                        <img class="films card-img-top rounded-0" src="asset/image/vignettes-carousel-films/v10.png" alt="Card image cap">
                       </a>
-                      <div class="card-body">
+                      <div class="card-body  text-center">
                         <a class="modalFilm nomFilm" data-toggle="modal" data-target="#filmFiche">
-                          <p class="card-text text-center m-0">Marie Curie</p>
+                          <span class="card-text text-center m-0">Marie Curie</span>
                         </a>
                         <ul class="info-films d-flex justify-content-between">
                           <li>2018</li>
