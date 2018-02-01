@@ -13,24 +13,24 @@ let seriesButtonsRowChildren = seriesButtonsRow.childNodes;
 
 
 const featuredMovies = [
-    {title: 'Winchester', genre: 'Horror', year: 2018, image: 'featuredvikings'},
-    {title: 'A Fantastic Woman', genre: 'Drama', year: 2018, image: 'featuredvikings'},
-    {title: 'The Cage Fighter', genre: 'Action', year: 2018, image: 'featuredvikings'},
-    {title: 'Hostiles', genre: 'Adventure', year: 2017, image: 'featuredvikings'},
-    {title: 'The Insult', genre: 'Drama', year: 2017, image: 'featuredvikings'},
-    {title: 'Padman', genre: 'Comedy', year: 2018, image: 'featuredvikings'},
-    {title: '12 Strong', genre: 'Action', year: 2018, image: 'featuredvikings'},
-    {title: 'Den of Thieves', genre: 'Action', year:2018, image: 'featuredvikings'},
-    {title: 'Star Wars: The Last Jedi', genre: 'Action', year: 2017, image: 'featuredvikings'},
-    {title: 'The Commuter', genre: 'Action', year: 2018, image: 'featuredvikings'},
-    {title: 'True Lies', genre: 'Comedy', year: 1994, image: 'featuredvikings'},
-    {title: 'American Made', genre: 'Comedy', year: 2017, image: 'featuredvikings'},
-    {title: 'Ant-Man', genre: 'Comedy', year: 2015, image: 'featuredvikings'},
-    {title: 'Pixels', genre: 'Fantasy', year: 2015, image: 'featuredvikings'},
-    {title: 'Colossal', genre: 'Fantasy', year: 2016, image: 'featuredvikings'},
-    {title: 'Men in Black 3', genre: 'Fantasy', year: 2012, image: 'featuredvikings'},
-    {title: 'Wild Wild West', genre: 'Fantasy', year: 1999, image: 'featuredvikings'},
-    {title: 'Ghostbusters II', genre: 'Fantasy', year: 1989, image: 'featuredvikings'}
+    {title: 'Winchester', genre: 'Horror', year: 2018, image: 'featuredwinchester'},
+    {title: 'A Fantastic Woman', genre: 'Drama', year: 2018, image: 'featuredafantasticwoman'},
+    {title: 'The Cage Fighter', genre: 'Action', year: 2018, image: 'featuredthecagefighter'},
+    {title: 'Hostiles', genre: 'Adventure', year: 2017, image: 'featuredhostiles'},
+    {title: 'The Insult', genre: 'Drama', year: 2017, image: 'featuredtheinsult'},
+    {title: 'Padman', genre: 'Comedy', year: 2018, image: 'featuredpadman'},
+    {title: '12 Strong', genre: 'Action', year: 2018, image: 'featured12strong'},
+    {title: 'Den of Thieves', genre: 'Action', year:2018, image: 'featureddenofthieves'},
+    {title: 'Star Wars: The Last Jedi', genre: 'Action', year: 2017, image: 'featuredstarwars'},
+    {title: 'The Commuter', genre: 'Action', year: 2018, image: 'featuredthecommuter'},
+    {title: 'True Lies', genre: 'Comedy', year: 1994, image: 'featuredtruelies'},
+    {title: 'American Made', genre: 'Comedy', year: 2017, image: 'featuredamericanmade'},
+    {title: 'Ant-Man', genre: 'Comedy', year: 2015, image: 'featuredantman'},
+    {title: 'Pixels', genre: 'Fantasy', year: 2015, image: 'featuredpixels'},
+    {title: 'Colossal', genre: 'Fantasy', year: 2016, image: 'featuredcolossal'},
+    {title: 'Men in Black 3', genre: 'Fantasy', year: 2012, image: 'featuredmeninblack'},
+    {title: 'Wild Wild West', genre: 'Fantasy', year: 1999, image: 'featuredwildwildwest'},
+    {title: 'Ghostbusters II', genre: 'Fantasy', year: 1989, image: 'featuredghostbusters'}
 ];
 
 const featuredSeries = [
