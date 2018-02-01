@@ -2,12 +2,12 @@
 
 var i=0;
 var imgJcvd=[
-  {title: 'Jean-Claude Van Johnson', year: 2016, picture: 'asset/image/img jcvd/photojc/1-Jean-Claude Van Johnson (2016).jpg'},
-  {title: 'The Expendables 2', year: 2012, picture: 'asset/image/img jcvd/photojc/2-The Expendables 2 (2012).jpg'},
-  {title: 'The Shepherd', year: 2008, picture: 'asset/image/img jcvd/photojc/3-The Shepherd (2008).jpg'},
-  {title: 'Hard Target', year: 1993, picture: 'asset/image/img jcvd/photojc/4-Hard Target (1993).jpg' },
-  {title: 'Universal Soldier', year: 1992, picture: 'asset/image/img jcvd/photojc/5-Universal Soldier (1992).jpg'},
-  {title: 'Bloodsport', year: 1988, picture: 'asset/image/img jcvd/photojc/6-Bloodsport (1988).jpg'}
+  {title: 'Jean-Claude Van Johnson', year: 2016, picture: 'assets/image/img jcvd/photojc/1-Jean-Claude Van Johnson (2016).jpg'},
+  {title: 'The Expendables 2', year: 2012, picture: 'assets/image/img jcvd/photojc/2-The Expendables 2 (2012).jpg'},
+  {title: 'The Shepherd', year: 2008, picture: 'assets/image/img jcvd/photojc/3-The Shepherd (2008).jpg'},
+  {title: 'Hard Target', year: 1993, picture: 'assets/image/img jcvd/photojc/4-Hard Target (1993).jpg' },
+  {title: 'Universal Soldier', year: 1992, picture: 'assets/image/img jcvd/photojc/5-Universal Soldier (1992).jpg'},
+  {title: 'Bloodsport', year: 1988, picture: 'assets/image/img jcvd/photojc/6-Bloodsport (1988).jpg'}
 ];
 
 var time = 2000;

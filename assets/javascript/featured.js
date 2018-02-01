@@ -63,8 +63,8 @@ let displayFeatured = function (container, data, bool, button){
     for(let i=0; i<data.length; i++){
         let poster = document.createElement('img');
         poster.className = 'poster';
-        poster.src = 'asset/image/' + data[i].image + '.jpg';
-        
+        poster.src = 'assets/image/' + data[i].image + '.jpg';
+
         let pTitle = document.createElement('P');
         pTitle.className = 'text-center m-0';
         pTitle.appendChild(document.createTextNode(data[i].title));
@@ -81,17 +81,17 @@ let displayFeatured = function (container, data, bool, button){
         descriptionList.appendChild(descriptionListElementYear);
         descriptionList.appendChild(descriptionListElementGenre);
 
-        
+
         let description = document.createElement('DIV');
         description.appendChild(pTitle);
         description.appendChild(descriptionList);
 
-        
+
         let wrap = document.createElement('DIV');
         wrap.className = 'col-8 offset-2 col-sm-4 offset-sm-1 col-md-3 offset-md-0 col-lg-2 col-xl-2 feat_wrap';
         wrap.appendChild(poster);
         wrap.appendChild(description);
-        
+
         if(i>=12){
             wrap.style.display = 'none';
         }
@@ -169,7 +169,7 @@ let genreFilter = function(filter, container, data, button){
         if(data[i].genre == filter){
             let poster = document.createElement('img');
             poster.className = 'poster';
-            poster.src = 'asset/image/' + data[i].image + '.jpg';
+            poster.src = 'assets/image/' + data[i].image + '.jpg';
 
             let pTitle = document.createElement('P');
             pTitle.className = 'text-center m-0';
@@ -187,11 +187,11 @@ let genreFilter = function(filter, container, data, button){
             descriptionList.appendChild(descriptionListElementYear);
             descriptionList.appendChild(descriptionListElementGenre);
 
-            
+
             let description = document.createElement('DIV');
             description.appendChild(pTitle);
             description.appendChild(descriptionList);
-            
+
             let wrap = document.createElement('DIV');
             wrap.className = 'col-8 offset-2 col-sm-4 offset-sm-1 col-md-3 offset-md-0 col-lg-2 col-xl-2 feat_wrap';
             wrap.appendChild(poster);
@@ -222,7 +222,7 @@ let genreFilter = function(filter, container, data, button){
             case 'Horror':
                 showAllHorrorMovies.className += ' active'
                 break;
-        
+
             default:
                 showAllMovies.className += ' active'
                 break;
@@ -247,7 +247,7 @@ let genreFilter = function(filter, container, data, button){
             case 'Fantasy':
                 showAllFantasySeries.className += ' active'
                 break;
-        
+
             default:
                 showAllSeries.className += ' active'
                 break;
