@@ -12,12 +12,14 @@ var imgJcvd=[
 
 var time = 2000;
 
-var slidePhoto = document.getElementById('photosSlide');
+// var slidePhoto = document.getElementById('photosSlide');
+var gallerieSlide=document.getElementById('gallerieJc');
 var info = document.getElementById('infoPicture');
 
 // slide auto
 function changeImg(){
-  slidePhoto.src=imgJcvd[i].picture;
+  // slidePhoto.src=imgJcvd[i].picture;
+  gallerieSlide.style.backgroundImage = "url(' " + imgJcvd[i].picture + " ')";
   info.innerHTML=imgJcvd[i].title + ", " + imgJcvd[i].year;
   if(i<imgJcvd.length-1){
       i++
@@ -31,7 +33,8 @@ function changeImg(){
 let selectPicture = function(title){
     for(let x=0; x<imgJcvd.length; x++){
         if(title == imgJcvd[x].title){
-          slidePhoto.src=imgJcvd[x].picture;
+          // slidePhoto.src=imgJcvd[x].picture;
+          gallerieSlide.style.backgroundImage = "url(' " + imgJcvd[i].picture + " ')";
           info.innerHTML=imgJcvd[x].title + ", " + imgJcvd[x].year;
           i = x;
         }
