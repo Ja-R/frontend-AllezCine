@@ -123,6 +123,10 @@ ul.onglet{
   background-color: #D04B38;
 }
 
+#carouselFilms .carousel-inner{
+  height: 340px;
+}
+
 /*slide films*/
 
 .bande-films{
@@ -208,6 +212,12 @@ a.arrowTop:hover{
 .shop .card-body.trailer{
   background-color: #0D0D0D;
   color: #FE4240;
+}
+.shop_para p{
+  margin-bottom: 0;
+}
+.shop_para p.card-text{
+  color: #7a7a7e;
 }
 
 footer{
@@ -299,7 +309,7 @@ footer a, footer a:hover, footer a:visited{
   color:  #A29FA1;
   background-color: #2E2E2F;
   padding: 2px 10px;
-  margin: 5px 0;
+  line-height: 20px;
 }
 
 footer hr{
@@ -354,7 +364,7 @@ footer img{
   margin: 0 auto;
 }
 
-#trailerTitle, #trailerYear{
+#trailerTitle{
   color: #FE4240;
 }
 .card-body.trailer{
