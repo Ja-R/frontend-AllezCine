@@ -469,9 +469,8 @@ body.modal-open {
 #themodal{
   width: 50%;
   height: 40%;
-  padding-top: 10px;
-  color: green;
-  border: 2px solid #FE423E;
+  padding-top: 5%;
+  border: 3px solid #FE423E;
   background-color: black;
   top: 150px;
 }
@@ -481,20 +480,12 @@ body.modal-open {
   color: white;
 }
 
-#out{
+.choix{
   color: white;
 }
 
-#out:hover{
-  color: #FE423E;
-}
-
-.choix{
-  color: #FE423E;
-}
-
 .choix:hover{
-  color: #BC994E;
+  color: #FE423E;
   text-decoration: none;
 }
 
@@ -502,5 +493,6 @@ body.modal-open {
   #themodal{
     width: 350px;
     height: 250px;
+    padding-top: 50px;
   }
 }

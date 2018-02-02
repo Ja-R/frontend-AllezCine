@@ -29,12 +29,10 @@ luminosite();
 
 
 //modal d'autorisation
-
 $(document).ready(function() {
     $("#themodal").modal("show");
-    console.log("clicko");
 });
 
-$(".close").click(function(){
+$("#out").click(function(){
     $("#themodal").modal("hide");
 });
