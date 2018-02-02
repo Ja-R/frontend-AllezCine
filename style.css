@@ -463,3 +463,44 @@ body.modal-open {
     margin-right: auto;
   }
 }
+
+/*modal question d'autorisation*/
+
+#themodal{
+  width: 50%;
+  height: 40%;
+  padding-top: 10px;
+  color: green;
+  border: 2px solid #FE423E;
+  background-color: black;
+  top: 150px;
+}
+
+.questModal{
+  text-align: center;
+  color: white;
+}
+
+#out{
+  color: white;
+}
+
+#out:hover{
+  color: #FE423E;
+}
+
+.choix{
+  color: #FE423E;
+}
+
+.choix:hover{
+  color: #BC994E;
+  text-decoration: none;
+}
+
+@media (max-width: 755px) {
+  #themodal{
+    width: 350px;
+    height: 250px;
+  }
+}
