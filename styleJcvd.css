@@ -98,12 +98,14 @@ button.btn-link:hover{
 
 .thumbnail {
     margin: 10px;
-    width: 180px;
+    width: 147px;
     height: 100px;
 }
 
 .thumbnail:hover {
     margin-top:1px;
+    padding-left: 3px;
+    border-left: 2px solid #BC994E;
 }
 
 .card{

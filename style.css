@@ -17,8 +17,9 @@ body{
 
 /* navigation */
 nav.navbar{
-  position: absolute ;
-  z-index: 10;
+  /*position: absolute ;
+  z-index: 10;*/
+  z-index:0;
 }
 
 .fd-transparent{
@@ -57,6 +58,10 @@ nav.navbar{
 
 .carousel-indicators li.active {
     background-color: #FE423E !important;
+}
+
+.latestmovies{
+  display: none;
 }
 
 /* element header */
@@ -405,6 +410,10 @@ body.modal-open {
   footer img{
     width: 25%;
   }
+  nav.navbar{
+    position: absolute ;
+    z-index: 10;
+  }
 }
 
 
@@ -416,7 +425,9 @@ body.modal-open {
 
 
 @media (min-width: 992px) {
-
+  .latestmovies{
+    display: block;
+  }
 }
 
 
@@ -430,14 +441,12 @@ body.modal-open {
   footer img{
     width: 33%;
   }
-}
-
-/*responsive top*/
-@media(min-width:1200px){
   .bande-films{
     padding-left: 100px;
   }
 }
+
+/*responsive haut de page*/
 
 @media (max-width: 576px) {
   #navigation{
@@ -448,10 +457,8 @@ body.modal-open {
     display: none;
   }
 
-
   #reseaux{
-    top: 300px;
-    height: 40%;
+    display: none;
   }
 }
 
