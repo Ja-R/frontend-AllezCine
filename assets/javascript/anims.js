@@ -1,16 +1,23 @@
 // fleche vers le haut
+var flecheTop;
+var iconeTop;
+
+flecheTop = document.createElement("a");
+flecheTop.className = 'arrowTop';
+flecheTop.setAttribute('href', '#banniere');
+iconeTop = document.createElement("i");
+iconeTop.className = 'fa fa-arrow-up';
+flecheTop.appendChild(iconeTop)
+document.body.appendChild(flecheTop);
+
 var banniere = document.getElementById('banniere');
-var arrow = document.getElementById('arrow');
+
 $(window).scroll(function(){
-  // console.log('page', window.pageYOffset);
-  // console.log('banniere', banniere.offsetHeight);
   if(window.pageYOffset > (banniere.offsetHeight / 2 )){
-    $(arrow).show();
-    // console.log('visible');
+    $(flecheTop).show();  
   }
   else{
-    $(arrow).hide();
-    // console.log('cache');
+    $(flecheTop).hide();
   }
 })
 

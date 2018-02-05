@@ -17,8 +17,6 @@ body{
 
 /* navigation */
 nav.navbar{
-  /*position: absolute ;
-  z-index: 10;*/
   z-index:0;
 }
 
@@ -26,7 +24,7 @@ nav.navbar{
   background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
- a.nav-link:hover{
+ a.nav-link:hover, a.dropdown-item:hover{
   background-color: #FE4140 !important;
 }
 
@@ -167,7 +165,7 @@ a.arrowTop{
   z-index: 50;
   bottom: 30px;
   right: 30px;
-  color: white;
+  color: white !important;
   background-color: #0D0D0D;
   padding: 8px 12px;
   border: 3px solid red;

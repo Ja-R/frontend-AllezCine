@@ -45,17 +45,19 @@
                 <a class="nav-link rouge" href="#" id="HomeNav">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fd-transparent text-white ml-1" href="#">Films</a>
+                <a class="nav-link fd-transparent text-white ml-1" href="#carouselFilms">Films</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fd-transparent text-white ml-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Featured movies
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Comedy</a>
-                  <a class="dropdown-item" href="#">Western</a>
-                  <a class="dropdown-item" href="#">Fiction</a>
+                  <a class="dropdown-item" href="#featuredMovies" onclick="displayFeatured(featuredMoviesContainer, featuredMovies, allMoviesDisplayed, showMovies)">All</a>
+                  <a class="dropdown-item" href="#featuredMovies" onclick="genreFilter('Action', featuredMoviesContainer, featuredMovies, showMovies)">Action</a>
+                  <a class="dropdown-item" href="#featuredMovies" onclick="genreFilter('Adventure', featuredMoviesContainer, featuredMovies, showMovies)">Adventure</a>
+                  <a class="dropdown-item" href="#featuredMovies" onclick="genreFilter('Comedy', featuredMoviesContainer, featuredMovies, showMovies)">Comedy</a>
+                  <a class="dropdown-item" href="#featuredMovies" onclick="genreFilter('Fantasy', featuredMoviesContainer, featuredMovies, showMovies)">Fantasy</a>
+                  <a class="dropdown-item" href="#featuredMovies" onclick="genreFilter('Horror', featuredMoviesContainer, featuredMovies, showMovies)">Horror</a>
                   <br>
                 </div>
               </li>
@@ -64,18 +66,19 @@
                   Features series TV
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Comedy</a>
-                  <a class="dropdown-item" href="#">Western</a>
-                  <a class="dropdown-item" href="#">Fiction</a>
+                    <a class="dropdown-item" href="#featuredSeries" onclick="displayFeatured(featuredSeriesContainer, featuredSeries, allSeriesDisplayed, showSeries)">All</a>
+                  <a class="dropdown-item" href="#featuredSeries" onclick="genreFilter('Action', featuredSeriesContainer, featuredSeries, showSeries)">Action</a>
+                  <a class="dropdown-item" href="#featuredSeries" onclick="genreFilter('Adventure', featuredSeriesContainer, featuredSeries, showSeries)">Adventure</a>
+                  <a class="dropdown-item" href="#featuredSeries" onclick="genreFilter('Comedy', featuredSeriesContainer, featuredSeries, showSeries)">Comedy</a>
+                  <a class="dropdown-item" href="#featuredSeries" onclick="genreFilter('Fantasy', featuredSeriesContainer, featuredSeries, showSeries)">Fantasy</a>
                   <br>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link fd-transparent text-white ml-1" href="#">Shop movies</a>
+                <a class="nav-link fd-transparent text-white ml-1" href="#shopMovies">Shop movies</a>
               </li>
               <li class="nav-item text-white ml-5">
-                <a class="nav-link text-white" href="#">Contact</a>
+                <a class="nav-link text-white" href="#contactUs">Contact</a>
               </li>
             </ul>
           </div>
@@ -492,14 +495,14 @@
       </div>
     </div>
 
-    <!-- fleche -->
-    <a href="#banniere" class="arrowTop" id="arrow"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-
+    <!-- fleche 
+    <a href="#banniere" class="arrowTop" id="arrow"><i class="fa fa-arrow-up" aria-hidden="true"></i></a> 
+    -->
 <!-- fin jacqueline -->
 
 <br>
 
-<div class="container-fluid series">
+<div id="featuredMovies" class="container-fluid series">
   <h2>FEATURED MOVIES</h2>
   <div class="row">
     <div class="col-10 offset-1 col-sm col-xl-10 offset-xl-1">
@@ -524,7 +527,7 @@
 
 <br>
 
-<div class="container-fluid series">
+<div id="featuredSeries" class="container-fluid series">
     <h2>FEATURED SERIES</h2>
     <div class="row">
       <div class="col-10 offset-1 col-sm col-xl-10 offset-xl-1">
@@ -548,7 +551,7 @@
 
   <br>
 
-  <div class="container-fluid shop">
+  <div id="shopMovies" class="container-fluid shop">
     <h2>SHOP MOVIES</h2>
     <div class="row">
       <div class="col-3 offset-9 col-sm-2 offset-sm-10 col-xl-1 offset-xl-11">
@@ -835,7 +838,7 @@
 
 
 
-  <div class="container-fluid contact">
+  <div id="contactUs" class="container-fluid contact">
     <h2>CONTACT US</h2>
     <div class="row">
       <form class="col-lg-6 col-xl-6" onsubmit="return false">

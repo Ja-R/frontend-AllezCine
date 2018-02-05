@@ -24,7 +24,7 @@ body{
 }
 
 /*onglets principaux JC*/
-#myTab{
+#myTabSup{
   border-color:  #BC994E !important;
   width: 90%;
   margin-left: auto;
@@ -127,6 +127,10 @@ button.btn-link:hover{
   border-top: 1px solid #BC994E;
 }
 
+#myTab{
+  border-color:  #BC994E !important;
+}
+
 footer{
   background-color: black;
   padding-top: 20px;
@@ -150,4 +154,13 @@ footer h3{
 footer h2{
   margin-bottom: 1px;
   font-size: 1.8em;
+}
+
+#buttonSendContact{
+  border-color:  #BC994E !important;
+  background-color: #0D0D0D;
+}
+
+#buttonSendContact:hover{
+  background-color: black;
 }
