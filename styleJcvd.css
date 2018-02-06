@@ -158,9 +158,11 @@ footer h2{
 
 #buttonSendContact{
   border-color:  #BC994E !important;
-  background-color: #0D0D0D;
+  color: white !important;
+  background-color: #0D0D0D !important;
 }
 
 #buttonSendContact:hover{
-  background-color: black;
+  background-color: black !important;
+  color: #BC994E !important;
 }
