@@ -78,6 +78,12 @@ ul.barre-rouge{
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonLogin{
+  margin-bottom: 15px;
 }
 
 .btn-dark{
@@ -412,6 +418,24 @@ body.modal-open {
     position: absolute ;
     z-index: 10;
   }
+
+  ul.barre-rouge{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .buttonLogin{
+    margin-bottom: 0px;
+    margin-right: 5px;
+    margin-left: 35px;
+  }
+
+  .telephone{
+    margin-left: 35px;
+  }
 }
 
 
@@ -454,10 +478,6 @@ body.modal-open {
   #carouselHeader.carousel{
     display: none;
   }
-
-  #reseaux{
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {
@@ -466,6 +486,9 @@ body.modal-open {
     width: 350px;
     margin-left: auto;
     margin-right: auto;
+  }
+  #reseaux{
+    top: 300px;
   }
 }
 
